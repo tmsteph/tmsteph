@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+Visit me at tmsteph.com or 3dvr.Tech! 
+
 <!--
 **tmsteph/tmsteph** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
