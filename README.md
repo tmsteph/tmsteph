@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-Visit me at https://tmsteph.com 
+Visit me at: https://tmsteph.com 
 
 <!--
 **tmsteph/tmsteph** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
