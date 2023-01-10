@@ -1,5 +1,11 @@
 ### Hi there 👋
 
+index.html is the starting point. 
+
+css are the style sheets. 
+
+js makes it responsive. 
+
 Visit me at: 
 
 https://tmsteph.com
