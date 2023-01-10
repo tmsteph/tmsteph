@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(99, 171, 226);
+    color: rgb(78, 75, 15);
+    padding:3rem;
+} 
+h1{
+    font-size:3rem;
+}
+h3{
+    font-size:1.5rem;
+}
+p {
+    font-size:1.5rem;
+}
+mall{
+    font-size:1rem;
+    margin:0px;
+    padding:0rem;
+    line-height:0px
+}
+.boxed{
+    border: 1px solid;
+
+    margin:5rem 10vw 10rem 5rem;
+    padding: 0rem 3rem 5rem 3rem;
+
+    
+}
+#cloud{
+    float:right;
+    opacity:60%;
+    /* margin-bottom:1rem; */
+}
+--telephone
+a[href^="tel:"]:before {
+    content: "\260e";
+    /* margin-right: 10px; */
+  }
