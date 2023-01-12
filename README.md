@@ -2,7 +2,7 @@
 
 index.html is the starting point. 
 
-css are the style sheets. 
+css is the style sheets. 
 
 js makes it responsive. 
 
