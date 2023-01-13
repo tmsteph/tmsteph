@@ -1,9 +1,0 @@
-body{
-    background-color: rgb(79, 137, 181);
-    color: rgb(78, 75, 15);
-}
-
-a[href^="tel:"]:before {
-    content: "\260e";
-    /* margin-right: 10px; */
-  }
