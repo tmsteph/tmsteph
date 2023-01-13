@@ -1,5 +1,17 @@
 ### Hi there 👋
 
+index.html is the starting point. 
+
+css are the style sheets. 
+
+js makes it responsive. 
+
+Visit me at: 
+
+https://tmsteph.com
+
+https://3dvr.tech
+
 <!--
 **tmsteph/tmsteph** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
