@@ -36,3 +36,6 @@ a[href^="tel:"]:before {
     content: "\260e";
     /* margin-right: 10px; */
   }
+.red-text{
+color:red;    
+}
