@@ -6,6 +6,14 @@ https://tmsteph.com
 
 https://3dvr.tech
 
+Don't be afraid to create your own tools. 
+
+Development and Engineering is a skill. 
+
+We need to practice! 
+
+Come join. 
+
 <!--
 **tmsteph/tmsteph** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
