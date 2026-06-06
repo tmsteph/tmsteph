@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lists | tmsteph</title>
+  <meta
+    name="description"
+    content="A local-first tmsteph list app for errands, projects, house notes, repairs, and anything else."
+  />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon-16x16.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <nav class="top-nav" aria-label="Lists navigation">
+      <a class="brand" href="../index.html">tmsteph</a>
+      <div class="status-pill" id="storageStatus">Local mode</div>
+    </nav>
+
+    <section class="hero" aria-labelledby="appTitle">
+      <div>
+        <p class="eyebrow">Local-first lists</p>
+        <h1 id="appTitle">Lists for anything</h1>
+        <p class="hero-copy">
+          Keep house errands, repair steps, trip notes, and project lists in one quiet place.
+        </p>
+      </div>
+      <form class="quick-create" id="quickCreateForm">
+        <label for="newListName">New list</label>
+        <div class="input-row">
+          <input id="newListName" name="newListName" type="text" placeholder="Packing, repairs, groceries..." />
+          <button type="submit">Add</button>
+        </div>
+      </form>
+    </section>
+  </header>
+
+  <main class="app-shell">
+    <aside class="sidebar" aria-label="Lists">
+      <div class="panel-heading">
+        <h2>Your lists</h2>
+        <button class="icon-button" id="seedButton" type="button" title="Restore starter list" aria-label="Restore starter list">+</button>
+      </div>
+      <div class="list-tabs" id="listTabs"></div>
+    </aside>
+
+    <section class="workspace" aria-live="polite">
+      <div class="workspace-header">
+        <div>
+          <p class="eyebrow" id="activeListKind">List</p>
+          <h2 id="activeListTitle"></h2>
+          <p id="activeListMeta" class="muted"></p>
+        </div>
+        <div class="workspace-actions">
+          <button class="secondary" id="renameListButton" type="button">Rename</button>
+          <button class="danger" id="deleteListButton" type="button">Delete</button>
+        </div>
+      </div>
+
+      <form class="add-item" id="addItemForm">
+        <label for="itemText">Add item</label>
+        <div class="input-row">
+          <input id="itemText" name="itemText" type="text" placeholder="Dish soap, shut off water, call plumber..." />
+          <select id="itemType" name="itemType" aria-label="Item type">
+            <option value="todo">Task</option>
+            <option value="note">Note</option>
+            <option value="step">Step</option>
+          </select>
+          <button type="submit">Add</button>
+        </div>
+      </form>
+
+      <div class="filters" aria-label="Item filters">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="open">Open</button>
+        <button class="filter-button" type="button" data-filter="done">Done</button>
+      </div>
+
+      <div class="items" id="items"></div>
+
+      <section class="notes-panel" aria-labelledby="notesTitle">
+        <h3 id="notesTitle">List notes</h3>
+        <textarea id="listNotes" rows="5" placeholder="Useful details, measurements, links, reminders..."></textarea>
+      </section>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>No sign-in required. Your lists save in this browser; export before clearing browser data.</p>
+    <div class="footer-actions">
+      <button class="secondary" id="exportButton" type="button">Export JSON</button>
+      <label class="import-label" for="importFile">Import JSON</label>
+      <input id="importFile" type="file" accept="application/json" />
+    </div>
+  </footer>
+
+  <template id="listTabTemplate">
+    <button class="list-tab" type="button">
+      <span class="list-tab__name"></span>
+      <span class="list-tab__count"></span>
+    </button>
+  </template>
+
+  <template id="itemTemplate">
+    <article class="item-card">
+      <label class="check-wrap">
+        <input class="item-check" type="checkbox" />
+        <span class="checkmark" aria-hidden="true"></span>
+      </label>
+      <div class="item-body">
+        <div class="item-main">
+          <span class="item-type"></span>
+          <p class="item-text"></p>
+        </div>
+        <textarea class="item-notes" rows="2" placeholder="Add details or steps..."></textarea>
+      </div>
+      <div class="item-actions">
+        <button class="icon-button move-up" type="button" title="Move up" aria-label="Move item up">↑</button>
+        <button class="icon-button move-down" type="button" title="Move down" aria-label="Move item down">↓</button>
+        <button class="icon-button remove-item" type="button" title="Remove" aria-label="Remove item">×</button>
+      </div>
+    </article>
+  </template>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
