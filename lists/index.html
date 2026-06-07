@@ -20,10 +20,11 @@
 
     <section class="hero" aria-labelledby="appTitle">
       <div>
-        <p class="eyebrow">Local-first lists</p>
+        <p class="eyebrow">Local-first sync</p>
         <h1 id="appTitle">Lists for anything</h1>
         <p class="hero-copy">
           Keep house errands, repair steps, trip notes, and project lists in one quiet place.
+          Use the same sync key on another browser or phone to keep them together.
         </p>
       </div>
       <form class="quick-create" id="quickCreateForm">
@@ -46,6 +47,20 @@
     </aside>
 
     <section class="workspace" aria-live="polite">
+      <section class="sync-panel" aria-labelledby="syncTitle">
+        <div>
+          <p class="eyebrow" id="syncTitle">Gun sync</p>
+          <p class="muted" id="syncDetail">Connecting to the 3DVR relay. Local saves keep working offline.</p>
+        </div>
+        <form class="sync-form" id="syncForm">
+          <label for="syncKey">Sync key</label>
+          <div class="input-row">
+            <input id="syncKey" name="syncKey" type="text" autocomplete="off" spellcheck="false" />
+            <button class="secondary" type="submit">Use key</button>
+          </div>
+        </form>
+      </section>
+
       <div class="workspace-header">
         <div>
           <p class="eyebrow" id="activeListKind">List</p>
@@ -87,7 +102,7 @@
   </main>
 
   <footer class="app-footer">
-    <p>No sign-in required. Your lists save in this browser; export before clearing browser data.</p>
+    <p>No sign-in required. Lists save locally and sync through Gun when the relay is reachable.</p>
     <div class="footer-actions">
       <button class="secondary" id="exportButton" type="button">Export JSON</button>
       <label class="import-label" for="importFile">Import JSON</label>
@@ -123,6 +138,7 @@
     </article>
   </template>
 
+  <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
   <script type="module" src="app.js"></script>
 </body>
 </html>

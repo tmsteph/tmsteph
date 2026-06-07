@@ -1,5 +1,17 @@
 const STORAGE_KEY = 'tmsteph.lists.v1';
+const SYNC_KEY_STORAGE_KEY = 'tmsteph.lists.syncKey.v1';
+const CLIENT_ID_STORAGE_KEY = 'tmsteph.lists.clientId.v1';
+const GUN_PEERS = window.__GUN_PEERS__ || [
+  'wss://relay.3dvr.tech/gun',
+  'wss://gun-relay-3dvr.fly.dev/gun',
+];
+
 let storageAvailable = true;
+let syncAvailable = false;
+let syncNode = null;
+let activeSyncKey = '';
+let applyingRemoteState = false;
+let lastSyncedAt = 0;
 
 const starterState = {
   activeListId: 'rosarito',
@@ -50,11 +62,18 @@ const storage = {
   },
 };
 
-let state = normalizeState(storage.load() || starterState);
+const storedState = storage.load();
+let hasStoredState = Boolean(storedState);
+let state = normalizeState(storedState || starterState);
 let filter = 'all';
+let syncKey = loadSyncKey();
+let clientId = loadClientId();
 
 const elements = {
   storageStatus: document.getElementById('storageStatus'),
+  syncDetail: document.getElementById('syncDetail'),
+  syncForm: document.getElementById('syncForm'),
+  syncKey: document.getElementById('syncKey'),
   quickCreateForm: document.getElementById('quickCreateForm'),
   newListName: document.getElementById('newListName'),
   listTabs: document.getElementById('listTabs'),
@@ -83,6 +102,53 @@ function createId(prefix = 'id') {
   return `${prefix}-${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
+function makeReadableKey() {
+  return `tmsteph-${Math.random().toString(36).slice(2, 6)}-${Date.now().toString(36).slice(-4)}`;
+}
+
+function cleanSyncKey(value) {
+  return String(value || '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9._-]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80);
+}
+
+function safeLocalGet(key) {
+  try {
+    return window.localStorage.getItem(key);
+  } catch (_error) {
+    storageAvailable = false;
+    return '';
+  }
+}
+
+function safeLocalSet(key, value) {
+  try {
+    window.localStorage.setItem(key, value);
+    storageAvailable = true;
+  } catch (_error) {
+    storageAvailable = false;
+  }
+}
+
+function loadClientId() {
+  const existing = safeLocalGet(CLIENT_ID_STORAGE_KEY);
+  if (existing) return existing;
+  const nextClientId = createId('client');
+  safeLocalSet(CLIENT_ID_STORAGE_KEY, nextClientId);
+  return nextClientId;
+}
+
+function loadSyncKey() {
+  const existing = cleanSyncKey(safeLocalGet(SYNC_KEY_STORAGE_KEY));
+  if (existing) return existing;
+  const nextSyncKey = makeReadableKey();
+  safeLocalSet(SYNC_KEY_STORAGE_KEY, nextSyncKey);
+  return nextSyncKey;
+}
+
 function clone(value) {
   return JSON.parse(JSON.stringify(value));
 }
@@ -93,6 +159,8 @@ function normalizeState(nextState) {
     : clone(starterState.lists);
   return {
     activeListId: nextState?.activeListId || lists[0].id,
+    updatedAt: Number(nextState?.updatedAt || 0),
+    clientId: String(nextState?.clientId || ''),
     lists: lists.map((list) => ({
       id: list.id || createId('list'),
       name: String(list.name || 'Untitled list').trim() || 'Untitled list',
@@ -115,8 +183,16 @@ function getActiveList() {
 
 function saveAndRender() {
   state.activeListId = getActiveList().id;
-  storage.save(state);
+  persistState();
   render();
+}
+
+function persistState({ publish = true } = {}) {
+  state.updatedAt = Date.now();
+  state.clientId = clientId;
+  hasStoredState = true;
+  storage.save(state);
+  if (publish) publishState();
 }
 
 function itemMatchesFilter(item) {
@@ -168,7 +244,7 @@ function renderItems(list) {
 
     card.querySelector('.item-notes').addEventListener('input', (event) => {
       item.notes = event.target.value;
-      storage.save(state);
+      persistState();
     });
 
     card.querySelector('.remove-item').addEventListener('click', () => {
@@ -185,7 +261,8 @@ function renderItems(list) {
 
 function render() {
   const activeList = getActiveList();
-  elements.storageStatus.textContent = storageAvailable ? 'Saved on this device' : 'Memory mode';
+  elements.storageStatus.textContent = getStatusText();
+  elements.syncKey.value = syncKey;
   elements.activeListKind.textContent = activeList.kind;
   elements.activeListTitle.textContent = activeList.name;
   const openCount = activeList.items.filter((item) => !item.done).length;
@@ -193,6 +270,11 @@ function render() {
   elements.listNotes.value = activeList.notes;
   renderListTabs();
   renderItems(activeList);
+}
+
+function getStatusText() {
+  if (syncAvailable) return 'Synced with Gun';
+  return storageAvailable ? 'Saved locally' : 'Memory mode';
 }
 
 function addList(name) {
@@ -291,7 +373,7 @@ elements.deleteListButton.addEventListener('click', () => {
 
 elements.listNotes.addEventListener('input', (event) => {
   getActiveList().notes = event.target.value;
-  storage.save(state);
+  persistState();
 });
 
 elements.filters.forEach((button) => {
@@ -316,6 +398,121 @@ elements.importFile.addEventListener('change', (event) => {
   event.target.value = '';
 });
 
+elements.syncForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const nextSyncKey = cleanSyncKey(elements.syncKey.value);
+  if (!nextSyncKey) return;
+  syncKey = nextSyncKey;
+  safeLocalSet(SYNC_KEY_STORAGE_KEY, syncKey);
+  activeSyncKey = syncKey;
+  lastSyncedAt = 0;
+  setSyncDetail('Switching sync key...');
+  connectGunSync({ publishLocal: false });
+  render();
+});
+
+function connectGunSync({ publishLocal = hasStoredState, publishStarterIfEmpty = false } = {}) {
+  if (typeof window.Gun !== 'function') {
+    setSyncDetail('Gun is unavailable. Lists are still saved locally on this device.');
+    return;
+  }
+
+  try {
+    const connectionKey = syncKey;
+    let receivedRemote = false;
+    activeSyncKey = connectionKey;
+    const gun = window.Gun({ peers: GUN_PEERS, axe: true });
+    syncNode = gun.get('tmsteph').get('lists').get(connectionKey);
+    gun.on('hi', () => {
+      if (connectionKey !== activeSyncKey) return;
+      syncAvailable = true;
+      setSyncDetail(`Connected. Share sync key "${connectionKey}" with your other browsers or devices.`);
+      render();
+    });
+    gun.on('bye', () => {
+      if (connectionKey !== activeSyncKey) return;
+      syncAvailable = false;
+      setSyncDetail('Relay disconnected. Local saves continue and sync will retry.');
+      render();
+    });
+    subscribeToGun(connectionKey, () => {
+      receivedRemote = true;
+    });
+    if (publishLocal) {
+      publishState();
+    } else {
+      setSyncDetail(`Waiting for Gun. Use key "${connectionKey}" on another browser or phone.`);
+      if (publishStarterIfEmpty) {
+        window.setTimeout(() => {
+          if (connectionKey !== activeSyncKey || receivedRemote || hasStoredState) return;
+          persistState();
+        }, 1800);
+      }
+    }
+  } catch (_error) {
+    syncAvailable = false;
+    setSyncDetail('Gun sync could not start. Local saves continue.');
+  }
+}
+
+function subscribeToGun(connectionKey, onRemote = () => {}) {
+  if (!syncNode || typeof syncNode.get !== 'function') return;
+  syncNode.get('snapshot').on((record) => {
+    if (connectionKey !== activeSyncKey) return;
+    if (!record || !record.payload) return;
+    onRemote();
+    const remoteUpdatedAt = Number(record.updatedAt || 0);
+    if (!remoteUpdatedAt || remoteUpdatedAt < lastSyncedAt) return;
+    if (record.clientId === clientId && remoteUpdatedAt <= state.updatedAt) return;
+
+    try {
+      const remoteState = normalizeState(JSON.parse(record.payload));
+      remoteState.updatedAt = remoteUpdatedAt;
+      remoteState.clientId = record.clientId || '';
+      applyingRemoteState = true;
+      state = remoteState;
+      lastSyncedAt = remoteUpdatedAt;
+      hasStoredState = true;
+      storage.save(state);
+      setSyncDetail(`Synced from Gun at ${new Date(remoteUpdatedAt).toLocaleTimeString()}.`);
+      render();
+    } catch (_error) {
+      setSyncDetail('Received a sync update that could not be read.');
+    } finally {
+      applyingRemoteState = false;
+    }
+  });
+}
+
+function publishState() {
+  if (applyingRemoteState || !syncNode || typeof syncNode.get !== 'function') return;
+  const updatedAt = Number(state.updatedAt || Date.now());
+  const writeKey = activeSyncKey;
+  state.updatedAt = updatedAt;
+  state.clientId = clientId;
+  lastSyncedAt = Math.max(lastSyncedAt, updatedAt);
+  syncNode.get('snapshot').put({
+    payload: JSON.stringify(state),
+    updatedAt,
+    clientId,
+  }, (ack) => {
+    if (writeKey !== activeSyncKey) return;
+    if (ack?.err) {
+      syncAvailable = false;
+      setSyncDetail('Saved locally. Gun sync will retry when the relay is reachable.');
+      return;
+    }
+    syncAvailable = true;
+    setSyncDetail(`Synced. Use key "${writeKey}" on another browser or phone.`);
+  });
+}
+
+function setSyncDetail(message) {
+  elements.syncDetail.textContent = message;
+  elements.storageStatus.textContent = getStatusText();
+}
+
 render();
+connectGunSync({ publishStarterIfEmpty: !hasStoredState });
 
 export { normalizeState, starterState };
