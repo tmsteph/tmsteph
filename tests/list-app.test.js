@@ -14,10 +14,16 @@ test('lists app ships a local-first multiple-list interface', async () => {
   assert.match(html, /Export JSON/);
   assert.match(html, /Import JSON/);
   assert.match(html, /No sign-in required/);
-  assert.match(html, /Saved on this device|Local mode/);
+  assert.match(html, /Gun sync/);
+  assert.match(html, /Sync key/);
+  assert.match(html, /cdn\.jsdelivr\.net\/npm\/gun\/gun\.js/);
+  assert.match(html, /Saved on this device|Local mode|Saved locally/);
   assert.match(html, /<script type="module" src="app\.js"><\/script>/);
 
   assert.match(js, /STORAGE_KEY = 'tmsteph\.lists\.v1'/);
+  assert.match(js, /SYNC_KEY_STORAGE_KEY = 'tmsteph\.lists\.syncKey\.v1'/);
+  assert.match(js, /GUN_PEERS/);
+  assert.match(js, /wss:\/\/relay\.3dvr\.tech\/gun/);
   assert.match(js, /Rosarito list/);
   assert.match(js, /Buy dish soap/);
   assert.match(js, /Fix the toilet/);
@@ -26,6 +32,8 @@ test('lists app ships a local-first multiple-list interface', async () => {
   assert.match(js, /Memory mode/);
   assert.match(js, /exportState/);
   assert.match(js, /importState/);
+  assert.match(js, /connectGunSync/);
+  assert.match(js, /publishState/);
   assert.match(js, /normalizeState/);
 });
 

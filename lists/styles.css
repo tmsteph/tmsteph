@@ -124,6 +124,7 @@ label {
 }
 
 .hero,
+.sync-panel,
 .sidebar,
 .workspace,
 .app-footer {
@@ -159,6 +160,7 @@ label {
 }
 
 .quick-create,
+.sync-form,
 .add-item {
   display: grid;
   gap: 0.55rem;
@@ -239,6 +241,21 @@ label {
   display: grid;
   gap: 1rem;
   padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.sync-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  gap: 0.9rem;
+  align-items: end;
+  padding: 0.9rem;
+  border-radius: 16px;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.sync-panel p {
+  margin: 0.25rem 0 0;
 }
 
 .workspace-actions,
@@ -346,7 +363,8 @@ label {
 
 @media (max-width: 840px) {
   .hero,
-  .app-shell {
+  .app-shell,
+  .sync-panel {
     grid-template-columns: 1fr;
   }
 
