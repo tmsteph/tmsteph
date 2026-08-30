@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A practical calendar of farms, farm stands, tours, animals and hands-on growing experiences around San Diego." />
+  <title>Farm Calendar — tmsteph</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f2e8;
+      --card: #fffdf8;
+      --ink: #203128;
+      --muted: #667068;
+      --line: #d8ddcf;
+      --accent: #315f45;
+      --accent-2: #dfeadf;
+      --warm: #efe4c8;
+      --shadow: 0 14px 34px rgba(38, 60, 46, .09);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #eaf3e7 0, var(--bg) 480px);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+    button { font: inherit; }
+
+    .wrap {
+      width: min(1080px, calc(100% - 28px));
+      margin: 0 auto;
+    }
+
+    header { padding: 18px 0 8px; }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-weight: 800;
+    }
+
+    nav a { text-decoration: none; }
+    .back { color: var(--muted); font-size: .94rem; }
+
+    .hero { padding: 42px 0 22px; }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 11px;
+      border: 1px solid #c9d6c6;
+      border-radius: 999px;
+      background: rgba(255,255,255,.6);
+      color: var(--accent);
+      font-size: .8rem;
+      font-weight: 850;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 15px 0 12px;
+      font-size: clamp(2.45rem, 8vw, 5.4rem);
+      line-height: .96;
+      letter-spacing: -.055em;
+    }
+
+    .lede {
+      max-width: 720px;
+      margin: 0;
+      color: #47574e;
+      font-size: clamp(1.05rem, 3.5vw, 1.28rem);
+    }
+
+    .quick-links {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 20px 0 2px;
+      scrollbar-width: none;
+    }
+    .quick-links::-webkit-scrollbar { display: none; }
+
+    .chip, .control {
+      flex: 0 0 auto;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.78);
+      color: var(--ink);
+      padding: 9px 13px;
+      font-weight: 780;
+      cursor: pointer;
+    }
+
+    .chip[aria-pressed="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .calendar-shell {
+      margin: 22px 0 30px;
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(255,255,255,.66);
+      box-shadow: var(--shadow);
+    }
+
+    .calendar-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .calendar-head h2 { margin: 0; font-size: 1.25rem; }
+    .calendar-head p { margin: 2px 0 0; color: var(--muted); font-size: .88rem; }
+
+    .calendar-controls { display: flex; gap: 6px; }
+    .control { border-radius: 12px; padding: 8px 11px; }
+    .control.icon { min-width: 42px; font-size: 1.22rem; }
+
+    .week {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 7px;
+      overflow-x: auto;
+      padding-bottom: 3px;
+    }
+
+    .day {
+      min-width: 88px;
+      min-height: 108px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+      padding: 10px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .day:hover { border-color: #aabca8; }
+    .day[aria-pressed="true"] { outline: 3px solid rgba(49,95,69,.18); border-color: var(--accent); }
+    .day.today .day-number { background: var(--accent); color: white; }
+
+    .day-name { display: block; color: var(--muted); font-weight: 800; font-size: .74rem; text-transform: uppercase; }
+    .day-number {
+      display: inline-flex;
+      width: 31px;
+      height: 31px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4px;
+      border-radius: 50%;
+      font-weight: 900;
+    }
+    .day-count { display: block; margin-top: 8px; color: var(--accent); font-size: .78rem; font-weight: 850; }
+
+    .selected-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 28px 0 12px;
+    }
+
+    .selected-head h2 { margin: 0; font-size: clamp(1.45rem, 4vw, 2rem); }
+    .selected-head p { margin: 0; color: var(--muted); font-size: .9rem; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--card);
+      box-shadow: 0 10px 26px rgba(38,60,46,.06);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 9px;
+      margin-bottom: 9px;
+    }
+
+    .location { color: var(--muted); font-size: .84rem; font-weight: 750; }
+    .badge { padding: 5px 8px; border-radius: 999px; background: var(--accent-2); color: var(--accent); font-size: .73rem; font-weight: 900; white-space: nowrap; }
+    .badge.weekly { background: var(--warm); color: #6a5525; }
+
+    .card h3 { margin: 0 0 6px; font-size: 1.25rem; letter-spacing: -.025em; }
+    .hours { margin: 0 0 8px; font-weight: 900; color: #2f5d43; }
+    .card-copy { margin: 0 0 12px; color: #526158; }
+
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 0;
+      margin: 0 0 14px;
+      list-style: none;
+    }
+
+    .facts li { padding: 5px 8px; border-radius: 9px; background: #f0f1e9; color: #59655d; font-size: .78rem; font-weight: 760; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 9px 12px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 850;
+      font-size: .88rem;
+    }
+    .button.secondary { background: #edf0e8; color: #405047; }
+
+    .empty {
+      grid-column: 1 / -1;
+      padding: 28px;
+      border: 1px dashed #bbc5b7;
+      border-radius: 18px;
+      text-align: center;
+      color: var(--muted);
+      background: rgba(255,255,255,.45);
+    }
+
+    .always {
+      margin: 36px 0 20px;
+      padding: 22px;
+      border-radius: 24px;
+      background: #21352a;
+      color: #f5f5eb;
+    }
+
+    .always h2 { margin: 0 0 6px; }
+    .always p { margin: 0 0 16px; color: #d6dfd7; max-width: 760px; }
+    .always-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 9px; }
+    .always-item { padding: 13px; border-radius: 14px; background: rgba(255,255,255,.08); }
+    .always-item strong { display: block; }
+    .always-item span { display: block; margin-top: 3px; color: #d6dfd7; font-size: .86rem; }
+
+    .note {
+      margin: 22px 0 42px;
+      padding: 14px 15px;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      background: rgba(255,255,255,.58);
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer { padding: 0 0 40px; color: var(--muted); font-size: .86rem; }
+
+    @media (max-width: 760px) {
+      .hero { padding-top: 28px; }
+      .calendar-head { align-items: flex-start; flex-direction: column; }
+      .cards { grid-template-columns: 1fr; }
+      .always-grid { grid-template-columns: 1fr; }
+      .selected-head { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <a href="/">tmsteph</a>
+      <a class="back" href="/land/">← Land & Community</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">San Diego · practical guide</span>
+      <h1>What farm can we visit?</h1>
+      <p class="lede">A simple weekly calendar for farms, farm stands, animals, tours and hands-on growing experiences that are actually open to the public.</p>
+
+      <div class="quick-links" aria-label="Filter experiences">
+        <button class="chip" aria-pressed="true" data-filter="all">Everything</button>
+        <button class="chip" aria-pressed="false" data-filter="central">Closer to central SD</button>
+        <button class="chip" aria-pressed="false" data-filter="animals">Animals</button>
+        <button class="chip" aria-pressed="false" data-filter="farmstand">Farm stands</button>
+        <button class="chip" aria-pressed="false" data-filter="tour">Tours</button>
+        <button class="chip" aria-pressed="false" data-filter="volunteer">Volunteer</button>
+        <button class="chip" aria-pressed="false" data-filter="free">Free / donation</button>
+      </div>
+    </section>
+
+    <section class="calendar-shell" aria-labelledby="week-title">
+      <div class="calendar-head">
+        <div>
+          <h2 id="week-title">Week</h2>
+          <p id="week-range"></p>
+        </div>
+        <div class="calendar-controls" role="group" aria-label="Change week">
+          <button class="control icon" type="button" id="prev" aria-label="Previous week">‹</button>
+          <button class="control" type="button" id="today">Today</button>
+          <button class="control icon" type="button" id="next" aria-label="Next week">›</button>
+        </div>
+      </div>
+      <div class="week" id="week" role="group" aria-label="Choose a day"></div>
+    </section>
+
+    <section aria-live="polite">
+      <div class="selected-head">
+        <div>
+          <h2 id="selected-title">Today</h2>
+          <p id="selected-subtitle">Public experiences with recurring hours.</p>
+        </div>
+      </div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="always">
+      <h2>Easiest spontaneous choices</h2>
+      <p>If you want to leave the house without booking anything, these are the most dependable recurring options in the list.</p>
+      <div class="always-grid">
+        <div class="always-item"><strong>City Farmers Nursery</strong><span>Wed–Sun · urban farm + animals · central San Diego</span></div>
+        <div class="always-item"><strong>Fox Point Farms</strong><span>Daily current summer tours · walk-up tickets · Encinitas</span></div>
+        <div class="always-item"><strong>Bates Nut Farm</strong><span>Daily · free farm zoo + picnic grounds · Valley Center</span></div>
+      </div>
+    </section>
+
+    <p class="note"><strong>Reality check:</strong> farm schedules change with weather, seasons, holidays and operations. Every card links to the official source, and this page records when the schedule was last checked. Private communities from the broader Land & Community list are intentionally not treated as drop-in attractions.</p>
+  </main>
+
+  <footer class="wrap">
+    <p>Last researched: August 30, 2026 · <a href="/land/">See the broader land & community project list →</a></p>
+  </footer>
+
+  <script>
+    const experiences = [
+      {
+        id: 'city-farmers',
+        name: 'City Farmers Nursery',
+        location: 'City Heights · San Diego',
+        address: '3110 Euclid Ave, San Diego, CA 92105',
+        badge: 'Walk in',
+        tags: ['central','animals','free'],
+        description: 'A 1.5-acre urban farm and nursery where you can wander the grounds, browse edible plants and visit mini donkeys, goats and chickens.',
+        facts: ['Urban farm', 'Mini donkeys + goats', 'Nursery', 'No reservation'],
+        source: 'https://www.cityfarmersnursery.com/visit-us',
+        schedule: {
+          0: '9am–5pm', 3: '9am–5pm', 4: '9am–5pm', 5: '9am–5pm', 6: '9am–5pm'
+        }
+      },
+      {
+        id: 'fox-point',
+        name: 'Fox Point Farms',
+        location: 'Encinitas',
+        address: '1203 Fox Point Dr, Encinitas, CA 92024',
+        badge: 'Walk-up tours',
+        tags: ['tour'],
+        description: 'A working regenerative farm inside an agrihood. Current summer tours run throughout the week and tickets are purchased on-site rather than reserved ahead.',
+        facts: ['Regenerative farm', 'Guided farm tours', 'Walk-up tickets', 'Seasonal hours'],
+        source: 'https://www.foxpointfarms.com/plan-your-visit/',
+        schedule: {
+          0: '9am–6pm tractor tours',
+          1: '10am–4pm walking tours',
+          2: '10am–4pm walking tours',
+          3: '10am–4pm walking tours',
+          4: '10am–4pm walking tours',
+          5: '10am–4pm walking · 5–6pm tractor',
+          6: '9am–6pm tractor tours'
+        }
+      },
+      {
+        id: 'bates',
+        name: 'Bates Nut Farm',
+        location: 'Valley Center',
+        address: '15954 Woods Valley Rd, Valley Center, CA 92082',
+        badge: 'Open daily',
+        tags: ['animals','free'],
+        description: 'A relaxed country outing with a free farm zoo, picnic grounds and country store. The animals and picnic areas are open year-round during normal farm hours.',
+        facts: ['Free farm zoo', 'Picnic grounds', 'Open daily', 'Seasonal events'],
+        source: 'https://batesnutfarm.biz/pages/plan-your-visit',
+        schedule: {0:'9am–5pm',1:'9am–5pm',2:'9am–5pm',3:'9am–5pm',4:'9am–5pm',5:'9am–5pm',6:'9am–5pm'}
+      },
+      {
+        id: 'coastal-roots',
+        name: 'Coastal Roots Farm Stand',
+        location: 'Encinitas',
+        address: '441 Saxony Rd, Encinitas, CA 92024',
+        badge: 'Farm stand',
+        tags: ['farmstand'],
+        description: 'A pay-what-you-can farm stand selling produce, herbs, fruit, flowers and eggs grown with sustainable and climate-smart practices.',
+        facts: ['Pay what you can', 'Organic produce', 'Food justice', 'Drop in'],
+        source: 'https://coastalrootsfarm.org/farm-stand/',
+        schedule: {0:'10am–3pm',4:'12–3pm'},
+        exceptions: ['2026-09-06','2026-09-13','2026-09-27','2026-10-04']
+      },
+      {
+        id: 'make-farm',
+        name: 'MAKE Farm',
+        location: 'Mission Valley · San Diego',
+        address: 'Innovation Pkwy, San Diego, CA 92108',
+        badge: 'Saturday hands-on',
+        tags: ['central','tour','volunteer','free'],
+        description: 'A working urban farm tied to MAKE Projects. After its 2026 education-program change, the farm continues public Saturday tours and volunteering.',
+        facts: ['Mission Valley', 'Tour', 'Volunteer', 'Updated Aug 2026'],
+        source: 'https://www.sdmake.org/copy-of-field-trips',
+        schedule: {6:'9–11am public tours + volunteering'}
+      },
+      {
+        id: 'stein',
+        name: 'Stein Family Farm',
+        location: 'National City',
+        address: '1808 F Ave, National City, CA 91950',
+        badge: 'Saturday',
+        tags: ['animals','free'],
+        description: 'A living-history farm with an old farmhouse, barn, gardens, orchard and farm animals. A rare close-in place to experience San Diego agricultural history.',
+        facts: ['Living history', 'Animals', 'Gardens + orchard', 'Donation encouraged'],
+        source: 'https://www.discovernationalcity.org/attractions',
+        schedule: {6:'10am–2pm'}
+      },
+      {
+        id: 'sand-straw',
+        name: "Sand n' Straw Community Farm Stand",
+        location: 'Vista',
+        address: '629 Mar Vista Dr, Vista, CA 92081',
+        badge: 'Farm stand',
+        tags: ['farmstand'],
+        description: 'A six-acre regenerative farm with a year-round farm stand. Full regenerative farm tours are available separately when scheduled or booked.',
+        facts: ['6 acres', 'Regenerative', 'Year-round produce', 'Tours available separately'],
+        source: 'https://www.sandnstraw.com/hours',
+        schedule: {3:'1–4pm',6:'8am–1pm'}
+      }
+    ];
+
+    const weekEl = document.getElementById('week');
+    const cardsEl = document.getElementById('cards');
+    const titleEl = document.getElementById('selected-title');
+    const subtitleEl = document.getElementById('selected-subtitle');
+    const rangeEl = document.getElementById('week-range');
+    const filters = [...document.querySelectorAll('[data-filter]')];
+
+    let activeFilter = 'all';
+    let selected = startOfDay(new Date());
+    let weekStart = startOfWeek(selected);
+
+    const params = new URLSearchParams(location.search);
+    if (params.get('date')) {
+      const parsed = parseLocalDate(params.get('date'));
+      if (parsed) {
+        selected = parsed;
+        weekStart = startOfWeek(parsed);
+      }
+    }
+
+    function startOfDay(date) {
+      return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    }
+
+    function startOfWeek(date) {
+      const d = startOfDay(date);
+      d.setDate(d.getDate() - d.getDay());
+      return d;
+    }
+
+    function addDays(date, count) {
+      const d = new Date(date);
+      d.setDate(d.getDate() + count);
+      return d;
+    }
+
+    function sameDay(a, b) {
+      return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+    }
+
+    function localISO(date) {
+      const y = date.getFullYear();
+      const m = String(date.getMonth() + 1).padStart(2, '0');
+      const d = String(date.getDate()).padStart(2, '0');
+      return `${y}-${m}-${d}`;
+    }
+
+    function parseLocalDate(value) {
+      const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value || '');
+      if (!match) return null;
+      const d = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+      return Number.isNaN(d.getTime()) ? null : d;
+    }
+
+    function availableOn(exp, date) {
+      if (!exp.schedule[date.getDay()]) return false;
+      return !(exp.exceptions || []).includes(localISO(date));
+    }
+
+    function filteredFor(date) {
+      return experiences.filter(exp => availableOn(exp, date) && (activeFilter === 'all' || exp.tags.includes(activeFilter)));
+    }
+
+    function renderWeek() {
+      weekEl.innerHTML = '';
+      const today = startOfDay(new Date());
+      const end = addDays(weekStart, 6);
+      rangeEl.textContent = `${weekStart.toLocaleDateString(undefined, {month:'short', day:'numeric'})} – ${end.toLocaleDateString(undefined, {month:'short', day:'numeric', year:'numeric'})}`;
+
+      for (let i = 0; i < 7; i++) {
+        const date = addDays(weekStart, i);
+        const count = filteredFor(date).length;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'day' + (sameDay(date, today) ? ' today' : '');
+        button.setAttribute('aria-pressed', String(sameDay(date, selected)));
+        button.innerHTML = `
+          <span class="day-name">${date.toLocaleDateString(undefined, {weekday:'short'})}</span>
+          <span class="day-number">${date.getDate()}</span>
+          <span class="day-count">${count ? `${count} option${count === 1 ? '' : 's'}` : '—'}</span>
+        `;
+        button.addEventListener('click', () => {
+          selected = date;
+          history.replaceState(null, '', `?date=${localISO(selected)}`);
+          render();
+        });
+        weekEl.appendChild(button);
+      }
+    }
+
+    function mapsLink(address) {
+      return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    }
+
+    function renderCards() {
+      const list = filteredFor(selected);
+      const today = startOfDay(new Date());
+      titleEl.textContent = sameDay(selected, today)
+        ? 'Today'
+        : selected.toLocaleDateString(undefined, {weekday:'long', month:'long', day:'numeric'});
+      subtitleEl.textContent = activeFilter === 'all'
+        ? `${list.length} recurring public option${list.length === 1 ? '' : 's'} on this day.`
+        : `${list.length} option${list.length === 1 ? '' : 's'} matching this filter.`;
+
+      if (!list.length) {
+        cardsEl.innerHTML = '<div class="empty">Nothing in this category is on the recurring schedule for this day. Try another day or switch back to Everything.</div>';
+        return;
+      }
+
+      cardsEl.innerHTML = list.map(exp => {
+        const weekly = Object.keys(exp.schedule).length <= 2;
+        return `
+          <article class="card">
+            <div class="card-top">
+              <span class="location">${exp.location}</span>
+              <span class="badge ${weekly ? 'weekly' : ''}">${exp.badge}</span>
+            </div>
+            <h3>${exp.name}</h3>
+            <p class="hours">${exp.schedule[selected.getDay()]}</p>
+            <p class="card-copy">${exp.description}</p>
+            <ul class="facts">${exp.facts.map(f => `<li>${f}</li>`).join('')}</ul>
+            <div class="actions">
+              <a class="button" href="${mapsLink(exp.address)}" target="_blank" rel="noopener">Directions</a>
+              <a class="button secondary" href="${exp.source}" target="_blank" rel="noopener">Official info</a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function render() {
+      renderWeek();
+      renderCards();
+    }
+
+    document.getElementById('prev').addEventListener('click', () => {
+      weekStart = addDays(weekStart, -7);
+      selected = weekStart;
+      history.replaceState(null, '', `?date=${localISO(selected)}`);
+      render();
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+      weekStart = addDays(weekStart, 7);
+      selected = weekStart;
+      history.replaceState(null, '', `?date=${localISO(selected)}`);
+      render();
+    });
+
+    document.getElementById('today').addEventListener('click', () => {
+      selected = startOfDay(new Date());
+      weekStart = startOfWeek(selected);
+      history.replaceState(null, '', `?date=${localISO(selected)}`);
+      render();
+    });
+
+    filters.forEach(button => {
+      button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter;
+        filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+        render();
+      });
+    });
+
+    render();
+  </script>
+</body>
+</html>
