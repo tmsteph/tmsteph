@@ -3,130 +3,166 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0a0d0c" />
-  <meta name="description" content="Thomas Stephens — open-source computing, audiovisual systems, and tools for independent work." />
+  <meta name="theme-color" content="#8ecdf4" />
+  <meta name="description" content="Thomas Stephens — open-source computing, audiovisual systems, experiments, and personal tools." />
   <title>Thomas Stephens — tmsteph</title>
   <link rel="icon" href="favicon-16x16.png" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
-
   <header class="site-header wrap">
-    <a class="brand" href="/" aria-label="tmsteph home">tmsteph<span class="brand-dot">.</span></a>
+    <a class="brand" href="/" aria-label="tmsteph home">tmsteph<span>.</span></a>
     <nav class="nav" aria-label="Primary navigation">
+      <a href="#apps">My Apps</a>
       <a href="#work">Work</a>
-      <a href="#principles">Principles</a>
       <a href="#connect">Connect</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero wrap">
-      <div class="hero-copy">
-        <p class="eyebrow">Thomas Stephens · builder / AV engineer / open-source tinkerer</p>
-        <h1>I build tools that make computers feel more <em>yours.</em></h1>
-        <p class="lede">
-          Open computing systems, audiovisual control, and practical software for independent people.
-          I like turning strange ideas into small working things, then sharing what survives.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://3dvr.tech">Explore 3DVR <span aria-hidden="true">↗</span></a>
-          <a class="button button-ghost" href="https://github.com/tmsteph">GitHub <span aria-hidden="true">↗</span></a>
+    <section class="sky-hero">
+      <div class="sun" aria-hidden="true"></div>
+      <div class="cloud cloud-a" aria-hidden="true"><span></span></div>
+      <div class="cloud cloud-b" aria-hidden="true"><span></span></div>
+      <div class="cloud cloud-c" aria-hidden="true"><span></span></div>
+      <div class="cloud cloud-d" aria-hidden="true"><span></span></div>
+
+      <div class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Thomas Stephens · tmsteph</p>
+          <h1>Dream things.<br><em>Build them.</em><br>Share the good parts.</h1>
+          <p class="lede">Audio, computers, open source, strange experiments, useful tools, and a little bit of magic. This is my corner of the internet.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#apps">Open my apps ↓</a>
+            <a class="button button-cloud" href="https://3dvr.tech">3DVR ↗</a>
+          </div>
         </div>
+
+        <aside class="thought-card">
+          <p class="scribble">currently imagining...</p>
+          <strong>Computers that belong to people again.</strong>
+          <p>Open systems, AV nodes, RISC-V, personal AI, and tools that help humans actually live.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="apps" class="apps-section wrap">
+      <div class="section-heading apps-heading">
+        <div>
+          <p class="eyebrow">My Apps</p>
+          <h2>Things I actually use.</h2>
+          <p>Pin the ones you want close. Your pins stay on this device.</p>
+        </div>
+        <button class="reset-pins" id="reset-pins" type="button">Reset pins</button>
       </div>
 
-      <aside class="status-card" aria-label="Current focus">
-        <p class="status-label"><span class="pulse" aria-hidden="true"></span> Current focus</p>
-        <p class="status-title">Building an open personal computing stack.</p>
-        <p class="status-copy">Servers, thin clients, RISC-V, agentic tools, AV nodes, and software that stays understandable.</p>
-        <a class="text-link" href="https://github.com/tmsteph">Follow the work →</a>
-      </aside>
+      <div class="app-grid" id="app-grid">
+        <article class="app-card app-featured" data-app="shopping" data-default-pinned="true">
+          <button class="pin-button" type="button" aria-label="Pin Shopping List" title="Pin to My Apps">★</button>
+          <a class="app-link" href="/shopping-list/">
+            <span class="app-icon">🛒</span>
+            <div>
+              <p class="app-kicker">Everyday</p>
+              <h3>Shopping List</h3>
+              <p>The important one. Get in, add what we need, get out.</p>
+            </div>
+            <span class="open-arrow">Open →</span>
+          </a>
+        </article>
+
+        <article class="app-card" data-app="calendar" data-default-pinned="true">
+          <button class="pin-button" type="button" aria-label="Pin Calendar" title="Pin to My Apps">★</button>
+          <a class="app-link" href="/calendar/">
+            <span class="app-icon">🗓️</span>
+            <div><p class="app-kicker">Schedule</p><h3>Calendar</h3><p>See the shape of the month at a glance.</p></div>
+            <span class="open-arrow">Open →</span>
+          </a>
+        </article>
+
+        <article class="app-card" data-app="farms">
+          <button class="pin-button" type="button" aria-label="Pin Farm Calendar" title="Pin to My Apps">☆</button>
+          <a class="app-link" href="/farm-calendar/">
+            <span class="app-icon">🌱</span>
+            <div><p class="app-kicker">Local life</p><h3>Farm Calendar</h3><p>Places and experiences around San Diego.</p></div>
+            <span class="open-arrow">Open →</span>
+          </a>
+        </article>
+
+        <article class="app-card" data-app="meals">
+          <button class="pin-button" type="button" aria-label="Pin Clean Meals" title="Pin to My Apps">☆</button>
+          <a class="app-link" href="/clean-meals/">
+            <span class="app-icon">🥑</span>
+            <div><p class="app-kicker">Home</p><h3>Clean Meals</h3><p>Simple nourishing food ideas.</p></div>
+            <span class="open-arrow">Open →</span>
+          </a>
+        </article>
+
+        <article class="app-card" data-app="journal">
+          <button class="pin-button" type="button" aria-label="Pin Journal" title="Pin to My Apps">☆</button>
+          <a class="app-link" href="/journal/">
+            <span class="app-icon">✍️</span>
+            <div><p class="app-kicker">Ideas</p><h3>Journal</h3><p>Notes, thoughts, and content experiments.</p></div>
+            <span class="open-arrow">Open →</span>
+          </a>
+        </article>
+
+        <article class="app-card" data-app="jobs">
+          <button class="pin-button" type="button" aria-label="Pin Job Applier" title="Pin to My Apps">☆</button>
+          <a class="app-link" href="/job-applier/">
+            <span class="app-icon">🧰</span>
+            <div><p class="app-kicker">Work</p><h3>Job Applier</h3><p>Tools for finding and organizing better work.</p></div>
+            <span class="open-arrow">Open →</span>
+          </a>
+        </article>
+      </div>
+
+      <a class="all-apps" href="https://tmsteph-redesign-2025.vercel.app">Explore the whole weird app laboratory →</a>
     </section>
 
     <section id="work" class="section wrap">
       <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h2>A few paths through the maze.</h2>
-        <p>The homepage stays small. The experiments can stay weird.</p>
+        <p class="eyebrow">What I'm building</p>
+        <h2>One person can build a surprising amount.</h2>
+        <p>The polished projects get a front door. The experiments are allowed to stay experimental.</p>
       </div>
 
       <div class="project-grid">
         <a class="project-card featured" href="https://3dvr.tech">
-          <div>
-            <p class="project-kicker">Company / platform</p>
-            <h3>3DVR</h3>
-            <p>Open tools for independent work, computing, community, and building the future without giving away the keys.</p>
-          </div>
-          <span class="project-arrow" aria-hidden="true">↗</span>
+          <p class="project-kicker">Company / movement</p><h3>3DVR</h3>
+          <p>Open tools for independent work, computing, community, and building the future.</p><span>Explore ↗</span>
         </a>
-
         <a class="project-card" href="https://tommyos.vercel.app">
-          <div>
-            <p class="project-kicker">Computing experiment</p>
-            <h3>TommyOS</h3>
-            <p>A browser-based playground for rethinking the desktop and what a personal operating environment can be.</p>
-          </div>
-          <span class="project-arrow" aria-hidden="true">↗</span>
+          <p class="project-kicker">Computing experiment</p><h3>TommyOS</h3>
+          <p>A playground for rethinking the desktop and personal computing.</p><span>Open ↗</span>
         </a>
-
-        <a class="project-card" href="https://tmsteph-redesign-2025.vercel.app">
-          <div>
-            <p class="project-kicker">Archive / lab</p>
-            <h3>Experiments</h3>
-            <p>The big messy notebook: calendars, farm tools, visualizations, personal utilities, ideas, and prototypes.</p>
-          </div>
-          <span class="project-arrow" aria-hidden="true">↗</span>
+        <a class="project-card" href="https://github.com/tmsteph">
+          <p class="project-kicker">Open source</p><h3>GitHub</h3>
+          <p>The trail of code, fixes, unfinished ideas, and things that survived.</p><span>Browse ↗</span>
         </a>
       </div>
     </section>
 
-    <section id="principles" class="section wrap principles">
-      <div class="section-heading">
-        <p class="eyebrow">Operating principles</p>
-        <h2>Dream. Build. Share.</h2>
-      </div>
-      <div class="principle-grid">
-        <article>
-          <span>01</span>
-          <h3>Own the stack</h3>
-          <p>Use the cloud when it helps. Keep the system portable, inspectable, and able to come home.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Ship small</h3>
-          <p>A working tool teaches more than a perfect diagram. Build the smallest useful version, then listen.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Leave a trail</h3>
-          <p>Open source the useful parts, document what worked, and make the next builder's path easier.</p>
-        </article>
-      </div>
+    <section class="section wrap philosophy">
+      <p class="big-quote">“The web should feel less like a mall and more like a neighborhood.”</p>
+      <p>Own your tools. Build small. Keep learning. Leave paths for other people to follow.</p>
     </section>
 
     <section id="connect" class="section wrap connect">
-      <div>
-        <p class="eyebrow">Connect</p>
-        <h2>Want to build something strange and useful?</h2>
-      </div>
+      <div><p class="eyebrow">Say hello</p><h2>Build something strange and useful with me.</h2></div>
       <div class="connect-links">
-        <a href="mailto:tmsteph1290@gmail.com">Email <span aria-hidden="true">↗</span></a>
-        <a href="https://github.com/tmsteph">GitHub <span aria-hidden="true">↗</span></a>
-        <a href="https://3dvr.tech">3DVR <span aria-hidden="true">↗</span></a>
+        <a href="mailto:tmsteph1290@gmail.com">Email <span>↗</span></a>
+        <a href="https://github.com/tmsteph">GitHub <span>↗</span></a>
+        <a href="https://3dvr.tech">3DVR <span>↗</span></a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer wrap">
     <p>© <span id="year">2026</span> Thomas Stephens</p>
-    <p>Built as plain HTML + CSS. No framework required.</p>
+    <p>Made with HTML, CSS, clouds, and curiosity.</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="js/home.js"></script>
 </body>
 </html>
