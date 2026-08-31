@@ -1,4 +1,5 @@
 :root {
+  color-scheme: only light;
   --sky-top: #79bce9;
   --sky-bottom: #dff4ff;
   --ink: #16324a;
@@ -77,10 +78,11 @@ button { font: inherit; }
 .cloud {
   --scale: 1;
   position: absolute;
+  isolation: isolate;
   width: calc(190px * var(--scale));
   height: calc(58px * var(--scale));
   border-radius: 999px;
-  background: rgba(255,255,255,.88);
+  background: rgba(255,255,255,.92) !important;
   box-shadow: 0 12px 30px rgba(75, 125, 155, .12);
   animation: drift 18s ease-in-out infinite alternate;
 }
@@ -89,7 +91,7 @@ button { font: inherit; }
   position: absolute;
   bottom: 18%;
   border-radius: 50%;
-  background: inherit;
+  background: rgba(255,255,255,.92) !important;
 }
 .cloud::before { width: 45%; height: 150%; left: 12%; }
 .cloud::after { width: 34%; height: 115%; right: 15%; }
@@ -140,11 +142,11 @@ h1 em { font-style: normal; color: #fffdf4; text-shadow: 0 3px 0 rgba(37,107,165
   margin-bottom: 3.5rem;
   padding: 1.5rem;
   border: 1px solid rgba(255,255,255,.72);
-  border-radius: 34px 34px 34px 10px;
+  border-radius: 30px;
   background: rgba(255,255,255,.58);
   box-shadow: var(--shadow);
   backdrop-filter: blur(14px);
-  transform: rotate(1.4deg);
+  transform: none;
 }
 .thought-card strong { display: block; margin-bottom: .55rem; font-size: 1.4rem; line-height: 1.15; letter-spacing: -.025em; }
 .thought-card p:last-child { margin-bottom: 0; color: var(--ink-soft); }
@@ -218,7 +220,10 @@ h1 em { font-style: normal; color: #fffdf4; text-shadow: 0 3px 0 rgba(37,107,165
   .hero { padding-top: 7rem; padding-bottom: 7rem; }
   h1 { font-size: clamp(3.2rem, 16vw, 5.2rem); }
   .sun { width: 76px; height: 76px; right: 5vw; top: 100px; }
-  .cloud-b { top: 340px; }
+  .cloud-a { --scale: .62; top: 150px; left: -36px; opacity: .58; }
+  .cloud-b { --scale: .68; top: 300px; right: 8px; opacity: .58; }
+  .cloud-c { --scale: .46; top: 92px; left: 55%; opacity: .5; }
+  .cloud-d { --scale: .52; bottom: 132px; left: 7%; opacity: .5; }
   .thought-card { margin-bottom: 2rem; }
   .apps-section { margin-top: -15px; }
   .apps-heading { align-items: flex-start; flex-direction: column; gap: .5rem; }
