@@ -1,35 +1,29 @@
-### Hi there 👋
+# tmsteph
 
-Visit me at: 
+Canonical source for **tmsteph.com** and my GitHub profile.
 
-https://tmsteph.com
+The website is intentionally boring to operate: plain HTML + CSS, no framework, no build step, and no generated dependency tree. Push `main`; Vercel serves the static files.
 
-https://3dvr.tech
+## What belongs here
 
-Don't be afraid to create your own tools. 
+- The tmsteph.com homepage
+- Small supporting assets used directly by the homepage
+- A few durable personal pages that are part of the public site
+- My public open-source contribution notes
 
-Development and Engineering is a skill. 
+## What does not belong here
 
-We need to practice! 
+Experimental apps, one-off prototypes, private utilities, and unrelated tools should live in their own repositories. The former catch-all site remains available as a lab/archive at:
 
-Come join. 
+https://tmsteph-redesign-2025.vercel.app
+
+## Links
+
+- https://tmsteph.com
+- https://3dvr.tech
+- https://github.com/tmsteph
 
 ## Open Source Contributions
 
-- **Debian / PulseAudio packaging** — Tested and reported a JACK2 Build-Depends fix for [Debian bug #1143540](https://bugs.debian.org/1143540). Verified a full Debian binary package build against JACK 1.9.22, including `pulseaudio-module-jack`. Working toward becoming a regular contributor / co-maintainer for the Debian PulseAudio package.
+- **Debian / PulseAudio packaging** — Tested and reported a JACK2 Build-Depends fix for Debian bug #1143540. Verified a full Debian binary package build against JACK 1.9.22, including `pulseaudio-module-jack`. Working toward becoming a regular contributor / co-maintainer for the Debian PulseAudio package.
 - PulseAudio Debian packaging: https://salsa.debian.org/pulseaudio-team/pulseaudio
-
-<!--
-**tmsteph/tmsteph** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
