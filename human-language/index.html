@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Human Language Lab — Thomas Stephens' human-first, agent-native programming language experiment." />
+  <title>Human Language Lab — tmsteph</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body { background: #f3f9fd; }
+    .human-wrap { width: min(900px, calc(100% - 32px)); margin: 0 auto; padding: 36px 0 80px; }
+    .human-nav { display:flex; gap:18px; flex-wrap:wrap; margin-bottom:48px; }
+    .human-nav a { color:#194e70; }
+    .human-hero h1 { font-size:clamp(2.7rem,8vw,5.5rem); line-height:.96; margin:.15em 0 .3em; }
+    .human-hero .lede { max-width:760px; font-size:1.25rem; line-height:1.6; }
+    .human-actions { display:flex; gap:12px; flex-wrap:wrap; margin:28px 0 50px; }
+    .human-actions a { display:inline-block; padding:12px 18px; border:2px solid #194e70; border-radius:999px; text-decoration:none; font-weight:700; }
+    .human-actions .primary { background:#194e70; color:white; }
+    .human-section { border-top:2px solid rgba(25,78,112,.14); padding:34px 0; }
+    .human-section p, .human-section li { line-height:1.65; max-width:760px; }
+    pre { overflow:auto; padding:22px; border-radius:18px; background:#10212d; color:#eef8ff; line-height:1.55; }
+  </style>
+</head>
+<body>
+  <main class="human-wrap">
+    <nav class="human-nav" aria-label="Human Language Lab navigation">
+      <a href="/">tmsteph</a>
+      <a href="https://portal.3dvr.tech/human-language/">3DVR Portal</a>
+      <a href="https://github.com/tmsteph/app-creation">Source</a>
+    </nav>
+
+    <section class="human-hero">
+      <p class="eyebrow">Human Language Lab · v0</p>
+      <h1>Programming should feel more human.</h1>
+      <p class="lede">A human-first, agent-native language experiment: say what the software should do clearly, keep the meaning strict, and compile it into ordinary inspectable code.</p>
+      <div class="human-actions">
+        <a class="primary" href="https://github.com/tmsteph/app-creation">Open the experiment ↗</a>
+        <a href="https://github.com/tmsteph/app-creation/blob/main/examples/garage.human">Read the first program ↗</a>
+      </div>
+    </section>
+
+    <section class="human-section">
+      <h2>The first tiny program</h2>
+      <pre><code>app GarageCRM
+
+data Customer:
+    name
+    email
+    status = "lead"
+
+when Customer is created:
+    send welcome email
+    notify sales
+
+when payment succeeds:
+    Customer.status = "client"
+    create project</code></pre>
+    </section>
+
+    <section class="human-section">
+      <h2>Why this exists</h2>
+      <p>Today we spend enormous human and machine effort navigating syntax, boilerplate, framework conventions, and sprawling codebases. The experiment asks whether a smaller, clearer language can make software easier for people to read and cheaper for coding agents to change.</p>
+      <p>The current prototype compiles <code>.human</code> files into plain Python. AI can help write it, but AI is not required to run it.</p>
+    </section>
+
+    <section class="human-section">
+      <h2>What we measure next</h2>
+      <p>Give agents the same change in Human, Python, and TypeScript, then compare tokens, retries, mistakes, elapsed time, and final correctness. If Human really helps, the benchmark should show it.</p>
+    </section>
+  </main>
+</body>
+</html>
