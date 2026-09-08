@@ -1,0 +1,14 @@
+const list=document.querySelector('#capability-list');
+const summary=document.querySelector('#summary-grid');
+const search=document.querySelector('#search');
+const empty=document.querySelector('#empty-state');
+const filters=[...document.querySelectorAll('[data-status]')];
+let data=null;
+let activeStatus='all';
+const escapeHtml=value=>String(value).replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+function card(item){const statusLabel=data.statuses[item.status]||item.status;return `<article class="capability-card status-${item.status}"><div class="capability-title"><span class="status-dot" aria-hidden="true"></span><div><h3>${escapeHtml(item.name)}</h3><p class="capability-category">${escapeHtml(item.category)}</p></div></div><div class="capability-body"><p>${escapeHtml(item.description)}</p><div class="meta-row"><span class="meta-chip status-${item.status}">${escapeHtml(statusLabel)}</span><span class="meta-chip">Permission: ${escapeHtml(item.permission)}</span><span class="meta-chip">Via: ${escapeHtml(item.access)}</span><span class="meta-chip">Verified: ${escapeHtml(item.verified)}</span></div></div></article>`;}
+function render(){const term=search.value.trim().toLowerCase();const filtered=data.capabilities.filter(item=>{const statusOk=activeStatus==='all'||item.status===activeStatus;const haystack=[item.name,item.category,item.description,item.permission,item.access].join(' ').toLowerCase();return statusOk&&(!term||haystack.includes(term));});list.innerHTML=filtered.map(card).join('');empty.hidden=filtered.length!==0;}
+function renderSummary(){const counts=data.capabilities.reduce((acc,item)=>(acc[item.status]=(acc[item.status]||0)+1,acc),{});const total=data.capabilities.length;summary.innerHTML=`<div class="summary-card"><strong>${counts.working||0}</strong><span>working</span></div><div class="summary-card"><strong>${counts.partial||0}</strong><span>partial</span></div><div class="summary-card"><strong>${total}</strong><span>recorded</span></div>`;document.querySelector('#updated-line').textContent=`Last registry update: ${data.updated} · statuses reflect verified access, not theoretical model features.`;}
+filters.forEach(button=>button.addEventListener('click',()=>{activeStatus=button.dataset.status;filters.forEach(item=>item.classList.toggle('active',item===button));render();}));
+search.addEventListener('input',render);
+fetch('abilities.json').then(response=>{if(!response.ok)throw new Error('Could not load registry');return response.json();}).then(registry=>{data=registry;renderSummary();render();}).catch(error=>{list.innerHTML=`<article class="capability-card"><div class="capability-body"><h3>Registry unavailable</h3><p>${escapeHtml(error.message)}</p></div></article>`;});

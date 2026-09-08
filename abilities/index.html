@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#8ecdf4" />
+  <meta name="description" content="A living registry of the tools, integrations, systems, and workflows Thomas can delegate to his AI operating partner." />
+  <title>Agent Abilities — tmsteph</title>
+  <link rel="icon" href="../favicon-16x16.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header wrap capability-header">
+    <a class="brand" href="/" aria-label="tmsteph home">tmsteph<span>.</span></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="/">Home</a><a href="#registry">Registry</a><a href="#policy">Policy</a></nav>
+  </header>
+
+  <main>
+    <section class="capability-hero">
+      <div class="capability-hero-inner wrap">
+        <p class="eyebrow">Thomas + AI operating system</p>
+        <h1>What can I actually do?</h1>
+        <p class="lede">A living, practical inventory of connected tools, remote systems, automation, creation, and real-world workflows—not a marketing list.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#registry">See abilities ↓</a><a class="button button-cloud" href="abilities.json">Raw JSON ↗</a></div>
+      </div>
+    </section>
+    <section class="registry-shell wrap" id="registry">
+      <div class="registry-intro">
+        <div><p class="eyebrow">Capability registry</p><h2>Current operating surface.</h2><p id="updated-line">Loading current status…</p></div>
+        <div class="summary-grid" id="summary-grid" aria-live="polite"></div>
+      </div>
+
+      <div class="registry-controls" aria-label="Capability filters">
+        <label class="search-field"><span>Search</span><input id="search" type="search" placeholder="email, server, browser, jobs…" /></label>
+        <div class="filter-row" id="status-filters"><button class="filter active" data-status="all" type="button">All</button><button class="filter" data-status="working" type="button">Working</button><button class="filter" data-status="partial" type="button">Partial</button><button class="filter" data-status="planned" type="button">Planned</button></div>
+      </div>
+
+      <div class="capability-list" id="capability-list"></div>
+      <p class="empty-state" id="empty-state" hidden>No abilities match that filter.</p>
+    </section>
+
+    <section class="section wrap policy" id="policy">
+      <div><p class="eyebrow">Operating policy</p><h2>Useful autonomy, visible boundaries.</h2></div>
+      <div class="policy-grid">
+        <article><strong>Default to action</strong><p>Research, read, organize, draft, code, test, create, and prepare the next executable step when the tools and authorization exist.</p></article>
+        <article><strong>Approval where it matters</strong><p>Messages to known personal or professional contacts, sensitive account changes, and other consequential actions keep their approval boundary.</p></article>
+        <article><strong>No secrets on this page</strong><p>This registry names capabilities and access paths without publishing credentials, account IDs, private addresses, tokens, or secret values.</p></article>
+        <article><strong>Verify reality</strong><p>“Working” means the path has been verified recently. Session-dependent systems stay “Partial” until they are proven healthy again.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><p>© 2026 Thomas Stephens</p><p>Living system · source data in <a href="abilities.json">abilities.json</a></p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
