@@ -1,12 +1,12 @@
 {
   "updated": "2026-09-08",
   "source": "Sanitized backup of collected Encore Lighthouse gig history",
-  "privacy": "Public-safe archive: internal booking numbers, schedule times, status, and private notes removed.",
+  "privacy": "Public-safe work archive. Availability, holidays, shift times, publication status, internal booking numbers, and personal schedule notes are omitted.",
   "captured_range": {
-    "from": "2026-01-08",
+    "from": "2024-08-20",
     "to": "2026-09-13"
   },
-  "count": 166,
+  "count": 343,
   "gigs": [
     {
       "date": "2026-09-13",
@@ -36,12 +36,6 @@
       "date": "2026-09-08",
       "role": "Set/Strike",
       "event": "Breakouts & Plenarys - Deloitte LEAD Sep2026",
-      "location": "San Diego, CA"
-    },
-    {
-      "date": "2026-09-07",
-      "role": "HOL - Labor Day",
-      "event": "Labor Day",
       "location": "San Diego, CA"
     },
     {
@@ -137,7 +131,7 @@
     {
       "date": "2026-07-28",
       "role": "Floor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -210,13 +204,13 @@
       "date": "2026-07-14",
       "role": "Video Technician Op",
       "event": "2026 July 1-31 - Manchester Grand Hyatt SD - Complimentary In-House Events",
-      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
     },
     {
       "date": "2026-07-13",
       "role": "Video Technician Op",
       "event": "2026 July 1-31 - Manchester Grand Hyatt SD - Complimentary In-House Events",
-      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
     },
     {
       "date": "2026-07-11",
@@ -251,13 +245,7 @@
     {
       "date": "2026-07-04",
       "role": "Floor",
-      "event": "called out 7/3 &530pm",
-      "location": "San Diego, CA"
-    },
-    {
-      "date": "2026-07-03",
-      "role": "HOL - Fourth of July",
-      "event": "Fourth of July",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -275,25 +263,19 @@
     {
       "date": "2026-06-23",
       "role": "Floor",
-      "event": "AM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-06-22",
       "role": "Floor",
-      "event": "AM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-06-20",
       "role": "Audio Eng FOH A1",
       "event": "AM IMMIGRATION LAWYERS ASSN - Option #1",
-      "location": "San Diego, CA"
-    },
-    {
-      "date": "2026-06-19",
-      "role": "HOL - Juneteenth",
-      "event": "Juneteenth",
       "location": "San Diego, CA"
     },
     {
@@ -324,13 +306,13 @@
       "date": "2026-06-14",
       "role": "Video Technician Op",
       "event": "2026 June 1-30 - Manchester Grand Hyatt SD - Complimentary In-House Events",
-      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
     },
     {
       "date": "2026-06-13",
       "role": "Video Technician Op",
       "event": "2026 June 1-30 - Manchester Grand Hyatt SD - Complimentary In-House Events",
-      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
     },
     {
       "date": "2026-06-12",
@@ -359,13 +341,7 @@
     {
       "date": "2026-06-07",
       "role": "Supervisor",
-      "event": "AM",
-      "location": "San Diego, CA"
-    },
-    {
-      "date": "2026-06-05",
-      "role": "",
-      "event": "OFF",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -423,27 +399,21 @@
       "location": "San Diego, CA"
     },
     {
-      "date": "2026-05-25",
-      "role": "HOL - Memorial Day",
-      "event": "Memorial Day",
-      "location": "San Diego, CA"
-    },
-    {
       "date": "2026-05-17",
       "role": "Floor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-05-14",
       "role": "Floor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-05-13",
       "role": "Floor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -462,7 +432,7 @@
       "date": "2026-05-09",
       "role": "Vid Tech Set Stk",
       "event": "2026 May Sheraton San Diego _ Employee Gala",
-      "location": "Sheraton San Diego · San Diego, CA"
+      "location": "San Diego, CA"
     },
     {
       "date": "2026-05-08",
@@ -474,7 +444,7 @@
       "date": "2026-05-07",
       "role": "Vid Tech Set Stk",
       "event": "2026 May Sheraton San Diego _ Employee Gala",
-      "location": "Sheraton San Diego · San Diego, CA"
+      "location": "San Diego, CA"
     },
     {
       "date": "2026-05-06",
@@ -527,25 +497,25 @@
     {
       "date": "2026-04-21",
       "role": "Liaison",
-      "event": "2026 AACR ANNUAL MEETING - BK # 29077644",
+      "event": "2026 AACR ANNUAL MEETING",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-04-19",
       "role": "Floor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-04-17",
       "role": "Floor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-04-16",
       "role": "Floor",
-      "event": "Mid Shift",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -575,19 +545,19 @@
     {
       "date": "2026-04-11",
       "role": "Floor",
-      "event": "AM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-04-10",
       "role": "Floor",
-      "event": "AM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-04-09",
       "role": "Floor",
-      "event": "AM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -599,13 +569,13 @@
     {
       "date": "2026-04-03",
       "role": "Supervisor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-04-02",
       "role": "Supervisor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -623,13 +593,13 @@
     {
       "date": "2026-03-28",
       "role": "Floor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-03-26",
       "role": "Floor",
-      "event": "AM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -654,13 +624,13 @@
       "date": "2026-03-19",
       "role": "Camera Op",
       "event": "2026 March 1-31 - Manchester Grand Hyatt SD - Complimentary In-House Events1",
-      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
     },
     {
       "date": "2026-03-18",
       "role": "Video Lead",
       "event": "2026 March 1-31 - Manchester Grand Hyatt SD - Complimentary In-House Events1",
-      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
     },
     {
       "date": "2026-03-17",
@@ -678,12 +648,6 @@
       "date": "2026-03-15",
       "role": "Set/Strike",
       "event": "CEATI 2026 HYDRO CONFERENCE",
-      "location": "San Diego, CA"
-    },
-    {
-      "date": "2026-03-14",
-      "role": "",
-      "event": "OFF",
       "location": "San Diego, CA"
     },
     {
@@ -708,12 +672,6 @@
       "date": "2026-03-10",
       "role": "Audio Technician Op",
       "event": "CAPITAS FINANCIAL 2026 ANNUAL MEETING",
-      "location": "San Diego, CA"
-    },
-    {
-      "date": "2026-03-09",
-      "role": "",
-      "event": "OFF",
       "location": "San Diego, CA"
     },
     {
@@ -749,7 +707,7 @@
     {
       "date": "2026-03-01",
       "role": "Floor",
-      "event": "AM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -779,7 +737,7 @@
     {
       "date": "2026-02-23",
       "role": "Floor",
-      "event": "AM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -804,7 +762,7 @@
       "date": "2026-02-19",
       "role": "Vid Eng",
       "event": "2026 February 1-28 - Manchester Grand Hyatt SD - Complimentary In-House Events",
-      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
     },
     {
       "date": "2026-02-18",
@@ -821,7 +779,7 @@
     {
       "date": "2026-02-16",
       "role": "Floor",
-      "event": "AM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -887,7 +845,7 @@
     {
       "date": "2026-01-30",
       "role": "Supervisor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -928,38 +886,20 @@
     },
     {
       "date": "2026-01-20",
-      "role": "Set/Strike",
-      "event": "Breakouts, Committee Meetings, Receptions - FMI Midwinter Executive Conference & FMI Board Meeting J",
+      "role": "Floor",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-01-20",
-      "role": "Floor",
-      "event": "",
+      "role": "Set/Strike",
+      "event": "Breakouts, Committee Meetings, Receptions - FMI Midwinter Executive Conference & FMI Board Meeting J",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-01-19",
       "role": "Floor",
       "event": "",
-      "location": "San Diego, CA"
-    },
-    {
-      "date": "2026-01-17",
-      "role": "",
-      "event": "OFF",
-      "location": "San Diego, CA"
-    },
-    {
-      "date": "2026-01-16",
-      "role": "",
-      "event": "OFF",
-      "location": "San Diego, CA"
-    },
-    {
-      "date": "2026-01-15",
-      "role": "",
-      "event": "OFF",
       "location": "San Diego, CA"
     },
     {
@@ -971,25 +911,25 @@
     {
       "date": "2026-01-13",
       "role": "Supervisor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-01-12",
       "role": "Supervisor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-01-11",
       "role": "Supervisor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
       "date": "2026-01-10",
       "role": "Supervisor",
-      "event": "PM",
+      "event": "",
       "location": "San Diego, CA"
     },
     {
@@ -1003,7 +943,1128 @@
       "role": "Floor",
       "event": "",
       "location": "San Diego, CA"
+    },
+    {
+      "date": "2026-01-03",
+      "role": "Set/Strike",
+      "event": "Breakouts - Red Wing National Retail Summit Jan2026 MYP2of2",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2026-01-02",
+      "role": "Liaison",
+      "event": "SMU Football - HOLIDAY BOWL 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-20",
+      "role": "Set/Strike",
+      "event": "Surgery Rigging and Power | BDI National Sales Meeting Nov2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-19",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-18",
+      "role": "Set/Strike",
+      "event": "PHOCUSWRIGHT, INC.",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-17",
+      "role": "Liaison",
+      "event": "PHOCUSWRIGHT, INC.",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-15",
+      "role": "Set/Strike",
+      "event": "MARINE AIRCRAFT WING NAW BALL",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-12",
+      "role": "Breakout Op",
+      "event": "AIMED25",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-11",
+      "role": "Breakout Op",
+      "event": "AIMED25",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-10",
+      "role": "Breakout Op",
+      "event": "AIMED25",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-09",
+      "role": "Set/Strike",
+      "event": "AIMED25",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-07",
+      "role": "Set/Strike",
+      "event": "ADSO Mid-Level Marketing Meeting 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-06",
+      "role": "Set/Strike",
+      "event": "TDO ANNUAL USER MEETING 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-05",
+      "role": "Set/Strike",
+      "event": "ADSO Mid-Level Marketing Meeting 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-02",
+      "role": "Power Dist Asst",
+      "event": "Bond Buyer CalPub 2025 Exhibits",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-11-01",
+      "role": "Set/Strike",
+      "event": "Light trees , drape, uplights, DSM",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-27",
+      "role": "Set/Strike",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-24",
+      "role": "Floor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-23",
+      "role": "Rig Support Tech",
+      "event": "2025 CCH USER CONFERENCE - General Session",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-20",
+      "role": "Set/Strike",
+      "event": "2025 CCH USER CONFERENCE - Breakout/Workshops",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-19",
+      "role": "Set/Strike",
+      "event": "2025 CCH USER CONFERENCE - Breakout/Workshops",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-17",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-16",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-15",
+      "role": "Liaison",
+      "event": "LEADERSHIP SUMMIT",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-12",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-11",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-10",
+      "role": "Floor",
+      "event": "INVENTORY",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-10-09",
+      "role": "Set/Strike",
+      "event": "FIT SOLUTIONS",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-29",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-28",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-25",
+      "role": "Floor",
+      "event": "Breakouts | Volkswagen National After Sales Meeting Sep 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-24",
+      "role": "Set/Strike",
+      "event": "GH-GHL-SD-SEPT2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-23",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-22",
+      "role": "Power Dist Asst",
+      "event": "Expo Hall with 50 Exhibitors",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-19",
+      "role": "Floor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-18",
+      "role": "Floor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-17",
+      "role": "Floor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-11",
+      "role": "Audio Eng FOH A1",
+      "event": "2025 USA SECTION & FOUNDATION ICD ANNUAL MEETING - USA Section Quote",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-10",
+      "role": "Audio Eng FOH A1",
+      "event": "2025 USA SECTION & FOUNDATION ICD ANNUAL MEETING - USA Section Quote",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-09",
+      "role": "Breakout Op",
+      "event": "2025 IPO Annual Meeting- Breakouts",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-08",
+      "role": "Breakout Op",
+      "event": "2025 IPO Annual Meeting- Breakouts",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-05",
+      "role": "Breakout Op",
+      "event": "HEFFERNAN 2025 REWARDS EVENT",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-04",
+      "role": "Floor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-03",
+      "role": "Audio Technician Op",
+      "event": "Pacific Fuels + Convenience Summit 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-09-02",
+      "role": "Audio Technician Op",
+      "event": "Pacific Fuels + Convenience Summit 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-31",
+      "role": "Floor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-28",
+      "role": "Power Dist Asst",
+      "event": "Risk 360 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-26",
+      "role": "Set/Strike",
+      "event": "Hyatt MEET San Diego 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-25",
+      "role": "Audio Technician Op",
+      "event": "Hyatt MEET San Diego 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-20",
+      "role": "Audio Technician Op",
+      "event": "Hyatt MEET San Diego 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-19",
+      "role": "Audio Technician Op",
+      "event": "Hyatt MEET San Diego 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-18",
+      "role": "Aud Tech Set/Strike",
+      "event": "Hyatt MEET San Diego 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-17",
+      "role": "Set/Strike",
+      "event": "Hyatt MEET San Diego 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-16",
+      "role": "Set/Strike",
+      "event": "SuperOps - SuperSummit San Diego 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-14",
+      "role": "Set/Strike",
+      "event": "SuperOps - SuperSummit San Diego 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-08-10",
+      "role": "Floor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-28",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-25",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-23",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-19",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-18",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-17",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-13",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-12",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-10",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-08",
+      "role": "Floor",
+      "event": "PM - LEAD",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-05",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-04",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-05-03",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-29",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-28",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-27",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-26",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-22",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-21",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-20",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-19",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-15",
+      "role": "Supervisor",
+      "event": "DAY Floor Shift",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-14",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-13",
+      "role": "Set/Strike",
+      "event": "Lenscrafter Breakouts",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-03",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-02",
+      "role": "Set/Strike",
+      "event": "WEX, INC. SPARK 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-04-01",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-31",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-29",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-26",
+      "role": "Camera Op",
+      "event": "CLOCK INTO PROPERTY: 7014 - Sony Broadcast Cam w/ attachments",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-25",
+      "role": "Camera Op",
+      "event": "CLOCK INTO PROPERTY: 7014 - Sony Broadcast Cam w/ attachments",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-24",
+      "role": "Camera Op",
+      "event": "CLOCK INTO PROPERTY: 7014 - Sony Broadcast Cam w/ attachments",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-19",
+      "role": "Set/Strike",
+      "event": "ADSO 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-18",
+      "role": "Camera Op",
+      "event": "ADSO 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-17",
+      "role": "Camera Op",
+      "event": "ADSO 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-16",
+      "role": "Camera Op",
+      "event": "ADSO 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-13",
+      "role": "Audio Lead",
+      "event": "Operate room with 18 PTT mics. Strike 2 rooms.",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-12",
+      "role": "Audio Lead",
+      "event": "Operate room with 18 PTT mics.",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-11",
+      "role": "Set/Strike",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-10",
+      "role": "Set/Strike",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-06",
+      "role": "Audio Eng FOH A1",
+      "event": "Tackle.IO - FY26 (Truss Mounted Screens w/backdrop pro)",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-05",
+      "role": "Audio Eng FOH A1",
+      "event": "Tackle.IO - FY26 (Truss Mounted Screens w/backdrop pro)",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-04",
+      "role": "Audio Eng FOH A1",
+      "event": "Tackle.IO - FY26 (Truss Mounted Screens w/backdrop pro)",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-03-03",
+      "role": "Audio Eng FOH A1",
+      "event": "Tackle.IO - FY26 (Truss Mounted Screens w/backdrop pro)",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-26",
+      "role": "Camera Op",
+      "event": "2025 Wealth Management & Trust Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-25",
+      "role": "Camera Op",
+      "event": "2025 Wealth Management & Trust Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-24",
+      "role": "Camera Op",
+      "event": "2025 Wealth Management & Trust Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-23",
+      "role": "Camera Op",
+      "event": "2025 Wealth Management & Trust Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-20",
+      "role": "Audio Eng FOH A1",
+      "event": "BridgeBio Meeting",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-19",
+      "role": "Audio Eng FOH A1",
+      "event": "BridgeBio Meeting",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-18",
+      "role": "Set/Strike",
+      "event": "STRUCTURAL HEART NSM - Breakouts",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-15",
+      "role": "Audio Eng FOH A1",
+      "event": "Winning Strategies Seminar and Fundamentals of Federal Criminal Defense Seminar February 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-14",
+      "role": "Audio Eng FOH A1",
+      "event": "Winning Strategies Seminar and Fundamentals of Federal Criminal Defense Seminar February 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-13",
+      "role": "Audio Eng FOH A1",
+      "event": "Winning Strategies Seminar and Fundamentals of Federal Criminal Defense Seminar February 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-12",
+      "role": "Audio Eng FOH A1",
+      "event": "Winning Strategies Seminar and Fundamentals of Federal Criminal Defense Seminar February 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-11",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-09",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-08",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-04",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-02-02",
+      "role": "Set/Strike",
+      "event": "ASGA 2025 ANNUAL MEETING",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-28",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-27",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-26",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-25",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-24",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-23",
+      "role": "Audio Technician Op",
+      "event": "VISTAR Expo",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-22",
+      "role": "Audio Technician Op",
+      "event": "VISTAR Expo",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-21",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-18",
+      "role": "Rig Support Tech",
+      "event": "STRYKER 2025 JR NASM",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-17",
+      "role": "Rig Support Tech",
+      "event": "STRYKER 2025 NV NASM Harbor",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-15",
+      "role": "Set/Strike",
+      "event": "Stryker 2025-ICW-BCDME AWARDS",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-14",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-12",
+      "role": "Set/Strike",
+      "event": "GSM 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-10",
+      "role": "Floor",
+      "event": "PM - LEAD",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-07",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2025-01-06",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-12-14",
+      "role": "Liaison",
+      "event": "RESMED INC HOLIDAY PARTY",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-12-13",
+      "role": "Camera Op",
+      "event": "MGHSD Holiday Party 2024",
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
+    },
+    {
+      "date": "2024-12-12",
+      "role": "Camera Op",
+      "event": "MGHSD Holiday Party 2024",
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
+    },
+    {
+      "date": "2024-12-11",
+      "role": "Camera Op",
+      "event": "MGHSD Holiday Party 2024",
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
+    },
+    {
+      "date": "2024-12-10",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-12-08",
+      "role": "Supervisor",
+      "event": "EARLY - Genesis in at 330a for Skyline, IATSE in at 330a for Cityview AB",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-12-06",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-12-04",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-12-03",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-12-02",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-26",
+      "role": "Supervisor",
+      "event": "DAY - Team meeting then outting",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-25",
+      "role": "Inventory",
+      "event": "Organize Cages",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-21",
+      "role": "Audio Eng FOH A1",
+      "event": "Hyatt Global Meeting - In House Event",
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
+    },
+    {
+      "date": "2024-11-20",
+      "role": "Audio Eng FOH A1",
+      "event": "Hyatt Global Meeting - In House Event",
+      "location": "Manchester Grand Hyatt San Diego \u00b7 San Diego, CA"
+    },
+    {
+      "date": "2024-11-19",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-18",
+      "role": "Audio Eng FOH A1",
+      "event": "MGME on behalf of AstraZeneca (AASLD 24) - M-U99TSTE",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-16",
+      "role": "Graphic OP",
+      "event": "CONNECTIVE TISSUE ONCOLOGY SOCIETY MEETING",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-15",
+      "role": "Graphic OP",
+      "event": "CONNECTIVE TISSUE ONCOLOGY SOCIETY MEETING",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-14",
+      "role": "Graphic OP",
+      "event": "CONNECTIVE TISSUE ONCOLOGY SOCIETY MEETING",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-13",
+      "role": "Graphic OP",
+      "event": "CONNECTIVE TISSUE ONCOLOGY SOCIETY MEETING",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-10",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-09",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-08",
+      "role": "Set/Strike",
+      "event": "2024 AHP Annual Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-08",
+      "role": "Camera Op",
+      "event": "2024 AHP Annual Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-07",
+      "role": "Camera Op",
+      "event": "2024 AHP Annual Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-06",
+      "role": "Camera Op",
+      "event": "2024 AHP Annual Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-11-01",
+      "role": "Aud Sys Eng A2",
+      "event": "GAF SALES CONFERENCE BackdropPro",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-31",
+      "role": "Aud Sys Eng A2",
+      "event": "GAF SALES CONFERENCE BackdropPro",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-30",
+      "role": "Aud Sys Eng A2",
+      "event": "GAF SALES CONFERENCE BackdropPro",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-29",
+      "role": "Aud Sys Eng A2",
+      "event": "GAF SALES CONFERENCE BackdropPro",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-26",
+      "role": "Power Dist Asst",
+      "event": "AV - IRMI Construction Risk Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-25",
+      "role": "Set/Strike",
+      "event": "ASN-ICW-JapanScience",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-24",
+      "role": "Breakout Op",
+      "event": "CHLAHF SCHOLARSHIP AWARDS GALA 2024 (VIP EVENT)",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-23",
+      "role": "Breakout Op",
+      "event": "ASN - ICW - Travere Theraputics",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-22",
+      "role": "Breakout Op",
+      "event": "October 2024- IN HOUSE EVENTS",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-20",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-19",
+      "role": "Supervisor",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-13",
+      "role": "Set/Strike",
+      "event": "NATIONAL PACE ASSOCIATION & TRADE SHOW 2024",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-12",
+      "role": "Set/Strike",
+      "event": "NAVY BIRTHDAY BALL 2024",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-11",
+      "role": "Audio Eng FOH A1",
+      "event": "Planned Parent",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-06",
+      "role": "Floor",
+      "event": "Kick off Emerald and help strike",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-05",
+      "role": "Set/Strike",
+      "event": "Respecting Pregnancy",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-04",
+      "role": "Liaison",
+      "event": "DISTRIBUTOR COUNCIL MEETING",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-10-03",
+      "role": "Rig Support Tech",
+      "event": "",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-09-24",
+      "role": "Breakout Op",
+      "event": "33rd Floor Floater",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-09-23",
+      "role": "Breakout Op",
+      "event": "33rd Floor Floater",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-09-21",
+      "role": "Breakout Op",
+      "event": "TDO ANNUAL USER MEETING 2024",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-09-20",
+      "role": "Breakout Op",
+      "event": "TDO ANNUAL USER MEETING 2024",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-09-19",
+      "role": "Set/Strike",
+      "event": "TDO ANNUAL USER MEETING 2024",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-09-13",
+      "role": "Breakout Op",
+      "event": "NAHREP L'ATTITUDE-ICW-Fannie Mae",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-09-12",
+      "role": "Audio Record Oper",
+      "event": "NAHREP L'ATTITUDE-ICW-bmo",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-08-23",
+      "role": "Camera Op",
+      "event": "NRC Health HUB24",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-08-22",
+      "role": "Camera Op",
+      "event": "NRC Health HUB24",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-08-21",
+      "role": "Camera Op",
+      "event": "NRC Health HUB24",
+      "location": "San Diego, CA"
+    },
+    {
+      "date": "2024-08-20",
+      "role": "Camera Op",
+      "event": "NRC Health HUB24",
+      "location": "San Diego, CA"
     }
-  ],
-  "location_note": "Venue shown where identifiable from the saved event text; otherwise city-level location from the San Diego schedule context."
+  ]
 }

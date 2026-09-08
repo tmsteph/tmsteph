@@ -1,7 +1,23 @@
 {
-  "updated": "2026-09-07",
-  "source": "Curated from Thomas Stephens' live-event work history",
+  "updated": "2026-09-08",
+  "source": "Curated from Thomas Stephens live-event work history and verified Work Light company schedules",
   "credits": [
+    {
+      "kind": "touring",
+      "period": "Oct 2021 – Aug 2022",
+      "role": "A2 / Touring Audio Technician",
+      "event": "Work Light Productions — Jesus Christ Superstar",
+      "location": "United States & Canada · selected stops: San Francisco, Indianapolis, Dallas, Orlando, San Antonio, Fort Worth, Chicago & Dayton",
+      "detail": "National theatrical tour; audio prep, maintenance, troubleshooting, load-ins/outs and performance support."
+    },
+    {
+      "kind": "touring",
+      "period": "2017 – 2019",
+      "role": "Touring Audio Technician",
+      "event": "Work Light Productions — Rodgers + Hammerstein’s Cinderella",
+      "location": "United States, Canada & Mexico · selected stops: Saskatoon, Regina, Winnipeg, Grand Forks, Cleveland, New Orleans & Monterrey",
+      "detail": "Touring audio; audio/video processing racks, system checks, repairs, cabling, logistics, local crews and performance support."
+    },
     {
       "period": "Sep 2026",
       "role": "Audio Engineer — FOH A1",
@@ -146,7 +162,172 @@
       "role": "Power Distribution Assistant",
       "event": "APSARD 2026",
       "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Nov 2025",
+      "role": "Liaison",
+      "event": "Phocuswright",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Nov 2025",
+      "role": "Power Distribution Assistant",
+      "event": "Bond Buyer CalPub 2025 Exhibits",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Oct 2025",
+      "role": "Rig Support Technician",
+      "event": "2025 CCH User Conference — General Session",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Sep 2025",
+      "role": "Audio Engineer — FOH A1",
+      "event": "USA Section & Foundation ICD Annual Meeting",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Aug–Sep 2025",
+      "role": "Audio Technician / Operator",
+      "event": "Hyatt MEET San Diego 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Mar 2025",
+      "role": "Audio Engineer — FOH A1",
+      "event": "Tackle.IO FY26",
+      "location": "San Diego, CA",
+      "detail": "Four-day A1 run; truss-mounted screens / backdrop production."
+    },
+    {
+      "historical": true,
+      "period": "Mar 2025",
+      "role": "Audio Lead",
+      "event": "Corporate meeting — 18 PTT microphone system",
+      "location": "San Diego, CA",
+      "detail": "Operated an 18-position push-to-talk microphone room."
+    },
+    {
+      "historical": true,
+      "period": "Mar 2025",
+      "role": "Camera Operator",
+      "event": "ADSO 2025",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Feb 2025",
+      "role": "Camera Operator",
+      "event": "2025 Wealth Management & Trust Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Feb 2025",
+      "role": "Audio Engineer — FOH A1",
+      "event": "BridgeBio Meeting",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Feb 2025",
+      "role": "Audio Engineer — FOH A1",
+      "event": "Winning Strategies / Federal Criminal Defense Seminar",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Jan 2025",
+      "role": "Rig Support Technician",
+      "event": "Stryker 2025 NASM",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Jan 2025",
+      "role": "Audio Technician / Operator",
+      "event": "VISTAR Expo",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Dec 2024",
+      "role": "Camera Operator",
+      "event": "MGHSD Holiday Party 2024",
+      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Nov 2024",
+      "role": "Audio Engineer — FOH A1",
+      "event": "Hyatt Global Meeting",
+      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Nov 2024",
+      "role": "Audio Engineer — FOH A1",
+      "event": "MGME / AstraZeneca — AASLD 24",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Nov 2024",
+      "role": "Graphics Operator",
+      "event": "Connective Tissue Oncology Society Meeting",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Nov 2024",
+      "role": "Camera Operator",
+      "event": "2024 AHP Annual Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Oct–Nov 2024",
+      "role": "Audio System Engineer — A2",
+      "event": "GAF Sales Conference",
+      "location": "San Diego, CA",
+      "detail": "Four-day A2 run."
+    },
+    {
+      "historical": true,
+      "period": "Oct 2024",
+      "role": "Audio Engineer — FOH A1",
+      "event": "Planned Parenthood event",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Oct 2024",
+      "role": "Power Distribution Assistant",
+      "event": "IRMI Construction Risk Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Sep 2024",
+      "role": "Audio Record Operator",
+      "event": "NAHREP L’ATTITUDE / BMO",
+      "location": "San Diego, CA"
+    },
+    {
+      "historical": true,
+      "period": "Aug 2024",
+      "role": "Camera Operator",
+      "event": "NRC Health HUB24",
+      "location": "San Diego, CA",
+      "detail": "Four-day camera run."
     }
   ],
-  "location_note": "Venue shown where verified from Lighthouse; city/area shown when the earlier capture did not preserve the exact venue."
+  "location_note": "Venue shown where verified from Lighthouse or company records; city/area shown when the earlier capture did not preserve the exact venue."
 }
