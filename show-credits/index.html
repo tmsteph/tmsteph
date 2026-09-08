@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#8ecdf4" />
+  <meta name="description" content="Thomas Stephens — selected live-event audiovisual show credits across audio, video, camera, LED, lighting, power distribution, and show-site leadership." />
+  <title>Show Credits — Thomas Stephens</title>
+  <link rel="icon" href="../favicon-16x16.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .resume-shell{max-width:980px;margin:0 auto;padding:48px 22px 80px}.resume-hero{padding:36px 0 24px}.resume-hero h1{font-size:clamp(2.6rem,7vw,5rem);line-height:.96;margin:.35rem 0 1rem}.resume-hero p{max-width:760px;font-size:1.08rem;line-height:1.7}.resume-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.skill-grid,.credit-grid{display:grid;gap:14px}.skill-grid{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin:28px 0 48px}.skill,.credit{background:rgba(255,255,255,.72);border:1px solid rgba(20,42,60,.12);border-radius:20px;padding:18px;box-shadow:0 8px 28px rgba(40,80,110,.08)}.skill strong{display:block;font-size:1.05rem}.skill span,.credit p,.credit small{color:#52616d}.section-title{margin:52px 0 18px}.credit-grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.credit h3{font-size:1.08rem;margin:.3rem 0 .55rem}.credit p{margin:.2rem 0;line-height:1.45}.credit small{display:block;margin-bottom:.35rem}.resume-note{margin-top:36px;padding:20px;border-left:4px solid #1b76bc;background:rgba(255,255,255,.55);border-radius:12px}.back-link{display:inline-block;margin-top:44px}@media(max-width:600px){.resume-shell{padding-top:20px}.resume-hero h1{font-size:3rem}}
+  </style>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="/" aria-label="tmsteph home">tmsteph<span>.</span></a>
+    <nav class="nav" aria-label="Primary navigation"><a href="/">Home</a><a href="#credits">Credits</a><a href="mailto:tmsteph1290@gmail.com">Contact</a></nav>
+  </header>
+
+  <main class="resume-shell">
+    <section class="resume-hero">
+      <p class="eyebrow">Thomas Stephens · Live Event AV</p>
+      <h1>Audio first.<br><em>Whole-show capable.</em></h1>
+      <p>Selected live-event work from more than a decade in corporate events and touring production. Experience spans FOH audio, system engineering, video, camera, LED walls, lighting, power distribution, breakout rooms, and show-site leadership.</p>
+      <div class="resume-actions">
+        <a class="button button-primary" href="#credits">Show credits ↓</a>
+        <a class="button button-cloud" href="mailto:tmsteph1290@gmail.com">Book / contact ↗</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills-title">
+      <p class="eyebrow">Core roles</p>
+      <h2 id="skills-title">Useful wherever the show needs me.</h2>
+      <div class="skill-grid">
+        <div class="skill"><strong>FOH A1</strong><span>Mixing, show operation, client-facing audio</span></div>
+        <div class="skill"><strong>A2 / Systems</strong><span>Audio systems, deployment, support</span></div>
+        <div class="skill"><strong>Video</strong><span>Video engineering, operation, camera</span></div>
+        <div class="skill"><strong>LED / Lighting</strong><span>LED walls, lighting tech, scenic support</span></div>
+        <div class="skill"><strong>Power</strong><span>Power distribution lead / assistant</span></div>
+        <div class="skill"><strong>Leadership</strong><span>Audio lead, video lead, scenic lead, supervisor</span></div>
+      </div>
+    </section>
+
+    <section id="credits" aria-labelledby="credits-title">
+      <p class="eyebrow">Selected show credits</p>
+      <h2 id="credits-title" class="section-title">Recent technical work</h2>
+      <div class="credit-grid" id="credit-grid" aria-live="polite"></div>
+      <div class="resume-note">This is a curated public record. Routine labor calls, private schedule details, internal booking numbers, and client notes stay private.</div>
+    </section>
+
+    <a class="all-apps back-link" href="/">← Back to tmsteph.com</a>
+  </main>
+
+  <footer class="site-footer wrap"><p>© 2026 Thomas Stephens</p><p>Live event AV · open source · useful systems.</p></footer>
+
+  <script>
+    fetch('./credits.json')
+      .then(r => r.json())
+      .then(({credits, updated}) => {
+        const grid = document.getElementById('credit-grid');
+        credits.forEach(c => {
+          const article = document.createElement('article');
+          article.className = 'credit';
+          article.innerHTML = `<small>${c.period}</small><h3>${c.role}</h3><p>${c.event}</p>${c.detail ? `<p>${c.detail}</p>` : ''}`;
+          grid.appendChild(article);
+        });
+        document.title = `Show Credits — Thomas Stephens · updated ${updated}`;
+      })
+      .catch(() => { document.getElementById('credit-grid').innerHTML = '<p>Credits are being updated.</p>'; });
+  </script>
+</body>
+</html>
