@@ -1,0 +1,600 @@
+{
+  "updated": "2026-09-08",
+  "note": "City-level route history reconstructed from company schedules, contracts, venue sheets and production/audio correspondence. It is intentionally conservative: missing points mean the source record is incomplete, not that the tour skipped everything between them.",
+  "tours": [
+    {
+      "id": "jcs",
+      "production": "Jesus Christ Superstar",
+      "company": "Work Light Productions",
+      "role": "A2 / Touring Audio Technician",
+      "period": "Oct 2021 - Aug 2022",
+      "stops": [
+        {
+          "city": "San Francisco",
+          "region": "CA",
+          "country": "USA",
+          "lat": 37.77,
+          "lng": -122.42,
+          "period": "Oct 2021",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Costa Mesa",
+          "region": "CA",
+          "country": "USA",
+          "lat": 33.64,
+          "lng": -117.92,
+          "period": "Nov 2021",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Milwaukee",
+          "region": "WI",
+          "country": "USA",
+          "lat": 43.04,
+          "lng": -87.91,
+          "period": "Nov 2021",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Toronto",
+          "region": "ON",
+          "country": "Canada",
+          "lat": 43.65,
+          "lng": -79.38,
+          "period": "Dec 2021",
+          "evidence": "Work Light weekly schedules"
+        },
+        {
+          "city": "Boston",
+          "region": "MA",
+          "country": "USA",
+          "lat": 42.36,
+          "lng": -71.06,
+          "period": "Jan 2022",
+          "evidence": "Work Light weekly schedules"
+        },
+        {
+          "city": "Indianapolis",
+          "region": "IN",
+          "country": "USA",
+          "lat": 39.77,
+          "lng": -86.16,
+          "period": "Jan 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Providence",
+          "region": "RI",
+          "country": "USA",
+          "lat": 41.82,
+          "lng": -71.41,
+          "period": "Jan 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Cleveland",
+          "region": "OH",
+          "country": "USA",
+          "lat": 41.5,
+          "lng": -81.69,
+          "period": "Feb 2022",
+          "evidence": "Work Light weekly schedules"
+        },
+        {
+          "city": "Washington",
+          "region": "DC",
+          "country": "USA",
+          "lat": 38.91,
+          "lng": -77.04,
+          "period": "Feb-Mar 2022",
+          "evidence": "Work Light weekly schedules"
+        },
+        {
+          "city": "Fort Myers",
+          "region": "FL",
+          "country": "USA",
+          "lat": 26.64,
+          "lng": -81.87,
+          "period": "Mar 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Charlotte",
+          "region": "NC",
+          "country": "USA",
+          "lat": 35.23,
+          "lng": -80.84,
+          "period": "Mar 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Kansas City",
+          "region": "MO",
+          "country": "USA",
+          "lat": 39.1,
+          "lng": -94.58,
+          "period": "Apr 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Dallas",
+          "region": "TX",
+          "country": "USA",
+          "lat": 32.78,
+          "lng": -96.8,
+          "period": "Apr 2022",
+          "evidence": "Work Light weekly schedules"
+        },
+        {
+          "city": "Atlanta",
+          "region": "GA",
+          "country": "USA",
+          "lat": 33.75,
+          "lng": -84.39,
+          "period": "Apr 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Greenville",
+          "region": "SC",
+          "country": "USA",
+          "lat": 34.85,
+          "lng": -82.4,
+          "period": "May 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Salt Lake City",
+          "region": "UT",
+          "country": "USA",
+          "lat": 40.76,
+          "lng": -111.89,
+          "period": "May 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Reno",
+          "region": "NV",
+          "country": "USA",
+          "lat": 39.53,
+          "lng": -119.81,
+          "period": "May 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Miami",
+          "region": "FL",
+          "country": "USA",
+          "lat": 25.76,
+          "lng": -80.19,
+          "period": "Jun 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Orlando",
+          "region": "FL",
+          "country": "USA",
+          "lat": 28.54,
+          "lng": -81.38,
+          "period": "Jun 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Durham",
+          "region": "NC",
+          "country": "USA",
+          "lat": 35.99,
+          "lng": -78.9,
+          "period": "Jun 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Richmond",
+          "region": "VA",
+          "country": "USA",
+          "lat": 37.54,
+          "lng": -77.44,
+          "period": "Jun 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Memphis",
+          "region": "TN",
+          "country": "USA",
+          "lat": 35.15,
+          "lng": -90.05,
+          "period": "Jun-Jul 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "San Antonio",
+          "region": "TX",
+          "country": "USA",
+          "lat": 29.42,
+          "lng": -98.49,
+          "period": "Jul 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Fort Worth",
+          "region": "TX",
+          "country": "USA",
+          "lat": 32.76,
+          "lng": -97.33,
+          "period": "Jul 2022",
+          "evidence": "Work Light weekly schedule"
+        },
+        {
+          "city": "Chicago",
+          "region": "IL",
+          "country": "USA",
+          "lat": 41.88,
+          "lng": -87.63,
+          "period": "Jul 2022",
+          "evidence": "Work Light weekly schedules"
+        },
+        {
+          "city": "Dayton",
+          "region": "OH",
+          "country": "USA",
+          "lat": 39.76,
+          "lng": -84.19,
+          "period": "Aug 2022",
+          "evidence": "Work Light weekly schedule"
+        }
+      ]
+    },
+    {
+      "id": "cinderella",
+      "production": "Rodgers + Hammerstein’s Cinderella",
+      "company": "Work Light Productions",
+      "role": "Touring A2 / Assistant Audio",
+      "period": "2017 - 2019",
+      "stops": [
+        {
+          "city": "Wilmington",
+          "region": "DE",
+          "country": "USA",
+          "lat": 39.74,
+          "lng": -75.55,
+          "period": "Feb 2017",
+          "evidence": "Signed Work Light deal memo - contract start"
+        },
+        {
+          "city": "Lexington",
+          "region": "KY",
+          "country": "USA",
+          "lat": 38.04,
+          "lng": -84.5,
+          "period": "2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "Waterbury",
+          "region": "CT",
+          "country": "USA",
+          "lat": 41.56,
+          "lng": -73.05,
+          "period": "2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "Wilmington",
+          "region": "NC",
+          "country": "USA",
+          "lat": 34.23,
+          "lng": -77.94,
+          "period": "2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "Huntsville",
+          "region": "AL",
+          "country": "USA",
+          "lat": 34.73,
+          "lng": -86.59,
+          "period": "2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "North Charleston",
+          "region": "SC",
+          "country": "USA",
+          "lat": 32.85,
+          "lng": -79.97,
+          "period": "2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "Roanoke",
+          "region": "VA",
+          "country": "USA",
+          "lat": 37.27,
+          "lng": -79.94,
+          "period": "2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "Vancouver",
+          "region": "BC",
+          "country": "Canada",
+          "lat": 49.28,
+          "lng": -123.12,
+          "period": "2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "Eugene",
+          "region": "OR",
+          "country": "USA",
+          "lat": 44.05,
+          "lng": -123.09,
+          "period": "2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "Boise",
+          "region": "ID",
+          "country": "USA",
+          "lat": 43.62,
+          "lng": -116.2,
+          "period": "2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "Fresno",
+          "region": "CA",
+          "country": "USA",
+          "lat": 36.74,
+          "lng": -119.79,
+          "period": "May 2017",
+          "evidence": "Work Light venue-information email"
+        },
+        {
+          "city": "Easton",
+          "region": "PA",
+          "country": "USA",
+          "lat": 40.69,
+          "lng": -75.21,
+          "period": "Jun 2017",
+          "evidence": "Signed Work Light deal memo - contract endpoint"
+        },
+        {
+          "city": "Anchorage",
+          "region": "AK",
+          "country": "USA",
+          "lat": 61.22,
+          "lng": -149.9,
+          "period": "Oct 2017",
+          "evidence": "Signed Work Light contract - tour-leg start"
+        },
+        {
+          "city": "Kennewick",
+          "region": "WA",
+          "country": "USA",
+          "lat": 46.21,
+          "lng": -119.14,
+          "period": "2017-18",
+          "evidence": "Audio/RF coordination email"
+        },
+        {
+          "city": "Fort Collins",
+          "region": "CO",
+          "country": "USA",
+          "lat": 40.59,
+          "lng": -105.08,
+          "period": "2017-18",
+          "evidence": "Audio/RF coordination email"
+        },
+        {
+          "city": "Casper",
+          "region": "WY",
+          "country": "USA",
+          "lat": 42.85,
+          "lng": -106.31,
+          "period": "2017-18",
+          "evidence": "Audio/RF coordination email"
+        },
+        {
+          "city": "University Park",
+          "region": "PA",
+          "country": "USA",
+          "lat": 40.8,
+          "lng": -77.86,
+          "period": "2018",
+          "evidence": "Work Light crew advance email"
+        },
+        {
+          "city": "New Philadelphia",
+          "region": "OH",
+          "country": "USA",
+          "lat": 40.49,
+          "lng": -81.45,
+          "period": "2018",
+          "evidence": "Work Light crew advance email"
+        },
+        {
+          "city": "Owensboro",
+          "region": "KY",
+          "country": "USA",
+          "lat": 37.77,
+          "lng": -87.11,
+          "period": "2018",
+          "evidence": "Work Light crew advance email"
+        },
+        {
+          "city": "Danville",
+          "region": "KY",
+          "country": "USA",
+          "lat": 37.65,
+          "lng": -84.77,
+          "period": "2018",
+          "evidence": "Work Light crew advance email"
+        },
+        {
+          "city": "Kansas City",
+          "region": "MO",
+          "country": "USA",
+          "lat": 39.1,
+          "lng": -94.58,
+          "period": "Jul 2018",
+          "evidence": "Signed Work Light contract - tour-leg endpoint"
+        },
+        {
+          "city": "Boston",
+          "region": "MA",
+          "country": "USA",
+          "lat": 42.36,
+          "lng": -71.06,
+          "period": "Dec 2018",
+          "evidence": "Production RF coordination correspondence"
+        },
+        {
+          "city": "Saskatoon",
+          "region": "SK",
+          "country": "Canada",
+          "lat": 52.13,
+          "lng": -106.67,
+          "period": "Dec 2018-Jan 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Regina",
+          "region": "SK",
+          "country": "Canada",
+          "lat": 50.45,
+          "lng": -104.62,
+          "period": "Dec 2018-Jan 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Winnipeg",
+          "region": "MB",
+          "country": "Canada",
+          "lat": 49.9,
+          "lng": -97.14,
+          "period": "Dec 2018-Jan 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Grand Forks",
+          "region": "ND",
+          "country": "USA",
+          "lat": 47.93,
+          "lng": -97.03,
+          "period": "Jan 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Cleveland",
+          "region": "OH",
+          "country": "USA",
+          "lat": 41.5,
+          "lng": -81.69,
+          "period": "Jan 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Huntington",
+          "region": "WV",
+          "country": "USA",
+          "lat": 38.42,
+          "lng": -82.45,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Blacksburg",
+          "region": "VA",
+          "country": "USA",
+          "lat": 37.23,
+          "lng": -80.41,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Wheeling",
+          "region": "WV",
+          "country": "USA",
+          "lat": 40.06,
+          "lng": -80.72,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Westlake",
+          "region": "OH",
+          "country": "USA",
+          "lat": 41.46,
+          "lng": -81.92,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Reading",
+          "region": "PA",
+          "country": "USA",
+          "lat": 40.34,
+          "lng": -75.93,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Wilkes-Barre",
+          "region": "PA",
+          "country": "USA",
+          "lat": 41.25,
+          "lng": -75.88,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Wallingford",
+          "region": "CT",
+          "country": "USA",
+          "lat": 41.46,
+          "lng": -72.82,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Richmond",
+          "region": "KY",
+          "country": "USA",
+          "lat": 37.75,
+          "lng": -84.3,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Henderson",
+          "region": "KY",
+          "country": "USA",
+          "lat": 37.84,
+          "lng": -87.59,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "New Orleans",
+          "region": "LA",
+          "country": "USA",
+          "lat": 29.95,
+          "lng": -90.07,
+          "period": "Apr 2019",
+          "evidence": "Work Light closing-week correspondence"
+        },
+        {
+          "city": "Monterrey",
+          "region": "NL",
+          "country": "Mexico",
+          "lat": 25.69,
+          "lng": -100.32,
+          "period": "Apr 2019",
+          "evidence": "Work Light final monthly schedule / Mexico run"
+        }
+      ]
+    }
+  ]
+}
