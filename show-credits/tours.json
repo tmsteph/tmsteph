@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-08",
-  "note": "Route history reconstructed from company schedules, contracts, venue sheets and production/audio correspondence. Exact theaters are shown where the archived venue sheet confirms them; otherwise the public record stays at city level.",
+  "note": "Route history reconstructed from company schedules, contracts, venue sheets and production/audio correspondence. Exact theaters are shown where archived company records confirm them; newly recovered monthly calendars also fill previously missing city stops.",
   "tours": [
     {
       "id": "jcs",
@@ -491,7 +491,7 @@
           "country": "Canada",
           "lat": 52.13,
           "lng": -106.67,
-          "period": "Dec 2018-Jan 2019",
+          "period": "Jan 2019",
           "evidence": "Production RF coordination file"
         },
         {
@@ -500,7 +500,7 @@
           "country": "Canada",
           "lat": 50.45,
           "lng": -104.62,
-          "period": "Dec 2018-Jan 2019",
+          "period": "Jan 2019",
           "evidence": "Production RF coordination file"
         },
         {
@@ -509,7 +509,7 @@
           "country": "Canada",
           "lat": 49.9,
           "lng": -97.14,
-          "period": "Dec 2018-Jan 2019",
+          "period": "Jan 2019",
           "evidence": "Production RF coordination file"
         },
         {
@@ -522,6 +522,33 @@
           "evidence": "Work Light monthly schedule"
         },
         {
+          "city": "Sioux Falls",
+          "region": "SD",
+          "country": "USA",
+          "lat": 43.55,
+          "lng": -96.73,
+          "period": "Jan 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "West Lafayette",
+          "region": "IN",
+          "country": "USA",
+          "lat": 40.43,
+          "lng": -86.91,
+          "period": "Jan 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Lima",
+          "region": "OH",
+          "country": "USA",
+          "lat": 40.74,
+          "lng": -84.11,
+          "period": "Jan 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
           "city": "Cleveland",
           "region": "OH",
           "country": "USA",
@@ -529,6 +556,123 @@
           "lng": -81.69,
           "period": "Jan 2019",
           "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Wichita",
+          "region": "KS",
+          "country": "USA",
+          "lat": 37.69,
+          "lng": -97.34,
+          "period": "Jan 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Knoxville",
+          "region": "TN",
+          "country": "USA",
+          "lat": 35.96,
+          "lng": -83.92,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Athens",
+          "region": "GA",
+          "country": "USA",
+          "lat": 33.95,
+          "lng": -83.38,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Williamsport",
+          "region": "PA",
+          "country": "USA",
+          "lat": 41.24,
+          "lng": -77.0,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Utica",
+          "region": "NY",
+          "country": "USA",
+          "lat": 43.1,
+          "lng": -75.23,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Morristown",
+          "region": "NJ",
+          "country": "USA",
+          "lat": 40.8,
+          "lng": -74.48,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "York",
+          "region": "PA",
+          "country": "USA",
+          "lat": 39.96,
+          "lng": -76.73,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Syracuse",
+          "region": "NY",
+          "country": "USA",
+          "lat": 43.05,
+          "lng": -76.15,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Charleston",
+          "region": "SC",
+          "country": "USA",
+          "lat": 32.78,
+          "lng": -79.93,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Pembroke",
+          "region": "NC",
+          "country": "USA",
+          "lat": 34.68,
+          "lng": -79.2,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Philadelphia",
+          "region": "PA",
+          "country": "USA",
+          "lat": 39.95,
+          "lng": -75.17,
+          "period": "Feb 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Richmond",
+          "region": "KY",
+          "country": "USA",
+          "lat": 37.75,
+          "lng": -84.3,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
+        },
+        {
+          "city": "Henderson",
+          "region": "KY",
+          "country": "USA",
+          "lat": 37.84,
+          "lng": -87.59,
+          "period": "Mar 2019",
+          "evidence": "Production RF coordination file"
         },
         {
           "city": "Huntington",
@@ -558,13 +702,13 @@
           "evidence": "Production RF coordination file"
         },
         {
-          "city": "Westlake",
+          "city": "Columbus",
           "region": "OH",
           "country": "USA",
-          "lat": 41.46,
-          "lng": -81.92,
+          "lat": 39.96,
+          "lng": -83.0,
           "period": "Mar 2019",
-          "evidence": "Production RF coordination file"
+          "evidence": "Work Light monthly schedule"
         },
         {
           "city": "Reading",
@@ -594,22 +738,76 @@
           "evidence": "Production RF coordination file"
         },
         {
-          "city": "Richmond",
-          "region": "KY",
+          "city": "Grand Rapids",
+          "region": "MI",
           "country": "USA",
-          "lat": 37.75,
-          "lng": -84.3,
+          "lat": 42.96,
+          "lng": -85.67,
           "period": "Mar 2019",
-          "evidence": "Production RF coordination file"
+          "evidence": "Work Light monthly schedule"
         },
         {
-          "city": "Henderson",
-          "region": "KY",
+          "city": "Saginaw",
+          "region": "MI",
           "country": "USA",
-          "lat": 37.84,
-          "lng": -87.59,
+          "lat": 43.42,
+          "lng": -83.95,
           "period": "Mar 2019",
-          "evidence": "Production RF coordination file"
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Kitchener",
+          "region": "ON",
+          "country": "Canada",
+          "lat": 43.45,
+          "lng": -80.49,
+          "period": "Mar 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Detroit",
+          "region": "MI",
+          "country": "USA",
+          "lat": 42.33,
+          "lng": -83.05,
+          "period": "Mar 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Savannah",
+          "region": "GA",
+          "country": "USA",
+          "lat": 32.08,
+          "lng": -81.09,
+          "period": "Apr 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Oxford",
+          "region": "AL",
+          "country": "USA",
+          "lat": 33.61,
+          "lng": -85.83,
+          "period": "Apr 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "Atlanta",
+          "region": "GA",
+          "country": "USA",
+          "lat": 33.75,
+          "lng": -84.39,
+          "period": "Apr 2019",
+          "evidence": "Work Light monthly schedule"
+        },
+        {
+          "city": "McAllen",
+          "region": "TX",
+          "country": "USA",
+          "lat": 26.2,
+          "lng": -98.23,
+          "period": "Apr 2019",
+          "evidence": "Work Light monthly schedule"
         },
         {
           "city": "New Orleans",
