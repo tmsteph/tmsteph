@@ -12,4 +12,4 @@
 - Preserve approval boundaries in the `permission` field.
 - Update the top-level `updated` date whenever the registry changes.
 
-The HTML page is a renderer. The JSON is the source of truth.
+The JSON is the source of truth. `build-standalone.py` also generates `/abilities.html` as a self-contained custom-domain fallback; rerun it whenever the registry or renderer changes.
