@@ -1,0 +1,842 @@
+{
+  "updated": "2026-09-08",
+  "source": "Sanitized backup of collected Encore Lighthouse gig history",
+  "privacy": "Public-safe archive: internal booking numbers, schedule times, status, and private notes removed.",
+  "captured_range": {
+    "from": "2026-01-08",
+    "to": "2026-09-13"
+  },
+  "count": 166,
+  "gigs": [
+    {
+      "date": "2026-09-13",
+      "role": "Audio Eng FOH A1",
+      "event": "Partnership Meeting 2026"
+    },
+    {
+      "date": "2026-09-12",
+      "role": "Set/Strike",
+      "event": "CIRCLE UP SEPTEMBER 2026 - Encore Provided gear - Breakouts"
+    },
+    {
+      "date": "2026-09-10",
+      "role": "Set/Strike",
+      "event": "Breakouts & Plenarys - Deloitte LEAD Sep2026"
+    },
+    {
+      "date": "2026-09-09",
+      "role": "Set/Strike",
+      "event": "Breakouts & Plenarys - Deloitte LEAD Sep2026"
+    },
+    {
+      "date": "2026-09-08",
+      "role": "Set/Strike",
+      "event": "Breakouts & Plenarys - Deloitte LEAD Sep2026"
+    },
+    {
+      "date": "2026-09-07",
+      "role": "HOL - Labor Day",
+      "event": "Labor Day"
+    },
+    {
+      "date": "2026-09-04",
+      "role": "Set/Strike",
+      "event": "Clear out Sales Office"
+    },
+    {
+      "date": "2026-09-01",
+      "role": "LED Wall Technician",
+      "event": "Allergan Mid Year NSM"
+    },
+    {
+      "date": "2026-08-31",
+      "role": "Floor",
+      "event": "Allergan Mid Year NSM"
+    },
+    {
+      "date": "2026-08-29",
+      "role": "Aud Sys Eng A2",
+      "event": "Saluda Medical Global Sales Meeting 2026"
+    },
+    {
+      "date": "2026-08-28",
+      "role": "Aud Sys Eng A2",
+      "event": "Saluda Medical Global Sales Meeting 2026"
+    },
+    {
+      "date": "2026-08-27",
+      "role": "Aud Sys Eng A2",
+      "event": "Saluda Medical Global Sales Meeting 2026"
+    },
+    {
+      "date": "2026-08-26",
+      "role": "Aud Sys Eng A2",
+      "event": "Saluda Medical Global Sales Meeting 2026"
+    },
+    {
+      "date": "2026-08-25",
+      "role": "Training",
+      "event": "Delivering World Class Service"
+    },
+    {
+      "date": "2026-08-21",
+      "role": "Aud Sys Eng A2",
+      "event": "NGLCC Conference 2026 - GS OPTION 1 (4) 10x18 Flown Screens"
+    },
+    {
+      "date": "2026-08-20",
+      "role": "Aud Sys Eng A2",
+      "event": "NGLCC Conference 2026 - GS OPTION 1 (4) 10x18 Flown Screens"
+    },
+    {
+      "date": "2026-08-19",
+      "role": "Aud Sys Eng A2",
+      "event": "NGLCC Conference 2026 - GS OPTION 1 (4) 10x18 Flown Screens"
+    },
+    {
+      "date": "2026-08-18",
+      "role": "Aud Sys Eng A2",
+      "event": "NGLCC Conference 2026 - GS OPTION 1 (4) 10x18 Flown Screens"
+    },
+    {
+      "date": "2026-08-17",
+      "role": "Aud Sys Eng A2",
+      "event": "NGLCC Conference 2026 - GS OPTION 1 (4) 10x18 Flown Screens"
+    },
+    {
+      "date": "2026-08-15",
+      "role": "Set/Strike",
+      "event": "UCI School of Medicine TNT PC-TEAM Fellows Conference Aug2026"
+    },
+    {
+      "date": "2026-08-13",
+      "role": "Light Tech St Stk",
+      "event": "UCI School of Medicine TNT PC-TEAM Fellows Conference Aug2026"
+    },
+    {
+      "date": "2026-07-28",
+      "role": "Floor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-07-27",
+      "role": "Aud Tech Set/Strike",
+      "event": "Oracle FY27 AI Experience series San Diego"
+    },
+    {
+      "date": "2026-07-26",
+      "role": "Set/Strike",
+      "event": "Comic Con 2026 San Diego Blood Bank"
+    },
+    {
+      "date": "2026-07-25",
+      "role": "Liaison",
+      "event": "DERM PS 2026 FALL NSM"
+    },
+    {
+      "date": "2026-07-23",
+      "role": "Scenic Lead",
+      "event": "Strike Area lighting on Woodstock (70+ Volts on truss sticks)"
+    },
+    {
+      "date": "2026-07-22",
+      "role": "Inventory",
+      "event": "PI Scanning"
+    },
+    {
+      "date": "2026-07-21",
+      "role": "Set/Strike",
+      "event": "Osaic Odyssey 2026 - Power Distribution"
+    },
+    {
+      "date": "2026-07-20",
+      "role": "Set/Strike",
+      "event": "Comic Con 2026 San Diego Blood Bank"
+    },
+    {
+      "date": "2026-07-18",
+      "role": "Audio Eng FOH A1",
+      "event": "Gila River Office of the Treasurer Planning Session"
+    },
+    {
+      "date": "2026-07-17",
+      "role": "Audio Eng FOH A1",
+      "event": "Gila River Office of the Treasurer Planning Session"
+    },
+    {
+      "date": "2026-07-16",
+      "role": "Audio Eng FOH A1",
+      "event": "Gila River Office of the Treasurer Planning Session"
+    },
+    {
+      "date": "2026-07-15",
+      "role": "Aud Tech Set/Strike",
+      "event": "Gila River Office of the Treasurer Planning Session"
+    },
+    {
+      "date": "2026-07-14",
+      "role": "Video Technician Op",
+      "event": "2026 July 1-31 - Manchester Grand Hyatt SD - Complimentary In-House Events"
+    },
+    {
+      "date": "2026-07-13",
+      "role": "Video Technician Op",
+      "event": "2026 July 1-31 - Manchester Grand Hyatt SD - Complimentary In-House Events"
+    },
+    {
+      "date": "2026-07-11",
+      "role": "Breakout Op",
+      "event": "Advanced TEVAR -Type B"
+    },
+    {
+      "date": "2026-07-10",
+      "role": "Breakout Op",
+      "event": "Advanced TEVAR -Type B"
+    },
+    {
+      "date": "2026-07-09",
+      "role": "Breakout Op",
+      "event": "Breakouts and Ancillary | MPACT All Team Meeting 2026"
+    },
+    {
+      "date": "2026-07-08",
+      "role": "Breakout Op",
+      "event": "Breakouts and Ancillary | MPACT All Team Meeting 2026"
+    },
+    {
+      "date": "2026-07-07",
+      "role": "Breakout Op",
+      "event": "Breakouts and Ancillary | MPACT All Team Meeting 2026"
+    },
+    {
+      "date": "2026-07-04",
+      "role": "Floor",
+      "event": "called out 7/3 &530pm"
+    },
+    {
+      "date": "2026-07-03",
+      "role": "HOL - Fourth of July",
+      "event": "Fourth of July"
+    },
+    {
+      "date": "2026-07-02",
+      "role": "Floor",
+      "event": "GM Balcony set - stringlights / audio"
+    },
+    {
+      "date": "2026-06-27",
+      "role": "Power Dist Lead",
+      "event": "AVID CENTER SUMMER INSTITUTE - PROGRAM 1"
+    },
+    {
+      "date": "2026-06-23",
+      "role": "Floor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-06-22",
+      "role": "Floor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-06-20",
+      "role": "Audio Eng FOH A1",
+      "event": "AM IMMIGRATION LAWYERS ASSN - Option #1"
+    },
+    {
+      "date": "2026-06-19",
+      "role": "HOL - Juneteenth",
+      "event": "Juneteenth"
+    },
+    {
+      "date": "2026-06-19",
+      "role": "Audio Eng FOH A1",
+      "event": "AM IMMIGRATION LAWYERS ASSN - Option #1"
+    },
+    {
+      "date": "2026-06-18",
+      "role": "Audio Eng FOH A1",
+      "event": "AM IMMIGRATION LAWYERS ASSN - Option #1"
+    },
+    {
+      "date": "2026-06-17",
+      "role": "Audio Eng FOH A1",
+      "event": "AM IMMIGRATION LAWYERS ASSN - Option #1"
+    },
+    {
+      "date": "2026-06-15",
+      "role": "Audio Lead",
+      "event": "AM IMMIGRATION LAWYERS ASSN - Option #1"
+    },
+    {
+      "date": "2026-06-14",
+      "role": "Video Technician Op",
+      "event": "2026 June 1-30 - Manchester Grand Hyatt SD - Complimentary In-House Events"
+    },
+    {
+      "date": "2026-06-13",
+      "role": "Video Technician Op",
+      "event": "2026 June 1-30 - Manchester Grand Hyatt SD - Complimentary In-House Events"
+    },
+    {
+      "date": "2026-06-12",
+      "role": "Breakout Op",
+      "event": "2026 PEACE OFFICER OF THE YEAR"
+    },
+    {
+      "date": "2026-06-11",
+      "role": "Audio Eng FOH A1",
+      "event": "ASML 2026 - Breakout"
+    },
+    {
+      "date": "2026-06-10",
+      "role": "Audio Eng FOH A1",
+      "event": "ASML 2026 - Breakout"
+    },
+    {
+      "date": "2026-06-09",
+      "role": "Audio Eng FOH A1",
+      "event": "ASML 2026 - Breakout"
+    },
+    {
+      "date": "2026-06-07",
+      "role": "Supervisor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-06-05",
+      "role": "",
+      "event": "OFF"
+    },
+    {
+      "date": "2026-06-04",
+      "role": "Vid Eng",
+      "event": "San Diego Housing Federation - June 4th, 2026"
+    },
+    {
+      "date": "2026-06-03",
+      "role": "Vid Eng",
+      "event": "WFA FRANCHISE FORUM - Core AV"
+    },
+    {
+      "date": "2026-06-02",
+      "role": "Vid Eng",
+      "event": "WFA FRANCHISE FORUM - Core AV"
+    },
+    {
+      "date": "2026-06-01",
+      "role": "Vid Eng",
+      "event": "WFA FRANCHISE FORUM - Core AV"
+    },
+    {
+      "date": "2026-05-31",
+      "role": "Camera Op",
+      "event": "ASMS Annual Conf 2026 -ICW- Bruker eXceed MEETING"
+    },
+    {
+      "date": "2026-05-30",
+      "role": "Camera Op",
+      "event": "ASMS Annual Conf 2026 -ICW- Bruker eXceed MEETING"
+    },
+    {
+      "date": "2026-05-28",
+      "role": "Audio Technician Op",
+      "event": "EMPYREAN USER CONFERENCE"
+    },
+    {
+      "date": "2026-05-27",
+      "role": "Audio Technician Op",
+      "event": "EMPYREAN USER CONFERENCE"
+    },
+    {
+      "date": "2026-05-26",
+      "role": "Audio Technician Op",
+      "event": "EMPYREAN USER CONFERENCE"
+    },
+    {
+      "date": "2026-05-25",
+      "role": "HOL - Memorial Day",
+      "event": "Memorial Day"
+    },
+    {
+      "date": "2026-05-17",
+      "role": "Floor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-05-14",
+      "role": "Floor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-05-13",
+      "role": "Floor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-05-12",
+      "role": "Audio Eng FOH A1",
+      "event": "VVIP Hyatt Commercial Svcs Meeting - In House Event"
+    },
+    {
+      "date": "2026-05-11",
+      "role": "Audio Eng FOH A1",
+      "event": "VVIP Hyatt Commercial Svcs Meeting - In House Event"
+    },
+    {
+      "date": "2026-05-09",
+      "role": "Vid Tech Set Stk",
+      "event": "2026 May Sheraton San Diego _ Employee Gala"
+    },
+    {
+      "date": "2026-05-08",
+      "role": "Set/Strike",
+      "event": "SUMMIT Moodys - MBCA"
+    },
+    {
+      "date": "2026-05-07",
+      "role": "Vid Tech Set Stk",
+      "event": "2026 May Sheraton San Diego _ Employee Gala"
+    },
+    {
+      "date": "2026-05-06",
+      "role": "Set/Strike",
+      "event": "JPMC CWM Field Leadership Offsite"
+    },
+    {
+      "date": "2026-05-04",
+      "role": "Set/Strike",
+      "event": "JPMC CWM Field Leadership Offsite"
+    },
+    {
+      "date": "2026-05-02",
+      "role": "Set/Strike",
+      "event": "Aspen Dental Management Inc"
+    },
+    {
+      "date": "2026-05-01",
+      "role": "Breakout Op",
+      "event": "PMWEB 2026 USER CONFERENCE"
+    },
+    {
+      "date": "2026-04-30",
+      "role": "Breakout Op",
+      "event": "PMWEB 2026 USER CONFERENCE"
+    },
+    {
+      "date": "2026-04-29",
+      "role": "Set/Strike",
+      "event": "PMWEB 2026 USER CONFERENCE"
+    },
+    {
+      "date": "2026-04-23",
+      "role": "Set/Strike",
+      "event": "set North beach"
+    },
+    {
+      "date": "2026-04-22",
+      "role": "Camera Op",
+      "event": "SAN DIEGO WORKING WATERFRONT"
+    },
+    {
+      "date": "2026-04-21",
+      "role": "Liaison",
+      "event": "2026 AACR ANNUAL MEETING - BK # 29077644"
+    },
+    {
+      "date": "2026-04-19",
+      "role": "Floor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-04-17",
+      "role": "Floor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-04-16",
+      "role": "Floor",
+      "event": "Mid Shift"
+    },
+    {
+      "date": "2026-04-15",
+      "role": "Breakout Op",
+      "event": "ASU/GSV 2026 -ICW- The Walton Family Foundation"
+    },
+    {
+      "date": "2026-04-14",
+      "role": "Breakout Op",
+      "event": "ASU/GSV 2026 -ICW- The Walton Family Foundation"
+    },
+    {
+      "date": "2026-04-13",
+      "role": "Breakout Op",
+      "event": "ASU/GSV 2026 -ICW- The Walton Family Foundation"
+    },
+    {
+      "date": "2026-04-12",
+      "role": "Audio Technician Op",
+      "event": "ASU GSV SUMMIT 2026 - 32nd-33rd Floor & Outlets"
+    },
+    {
+      "date": "2026-04-11",
+      "role": "Floor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-04-10",
+      "role": "Floor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-04-09",
+      "role": "Floor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-04-08",
+      "role": "Training",
+      "event": "Roland V series and Pearl Mini trainings at HILTON BAYFRONT 3322"
+    },
+    {
+      "date": "2026-04-03",
+      "role": "Supervisor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-04-02",
+      "role": "Supervisor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-03-31",
+      "role": "Aud Sys Eng A2",
+      "event": "TJX Companies Mar2026 Marmaxx DM Summit - Main"
+    },
+    {
+      "date": "2026-03-30",
+      "role": "Aud Sys Eng A2",
+      "event": "TJX Companies Mar2026 Marmaxx DM Summit - Main"
+    },
+    {
+      "date": "2026-03-28",
+      "role": "Floor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-03-26",
+      "role": "Floor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-03-25",
+      "role": "Floor",
+      "event": "AM - Float 32nd/33rd floors"
+    },
+    {
+      "date": "2026-03-24",
+      "role": "Floor",
+      "event": "AM - Inventory assist as needed"
+    },
+    {
+      "date": "2026-03-20",
+      "role": "Audio Lead",
+      "event": "CEATI 2026 HYDRO CONFERENCE"
+    },
+    {
+      "date": "2026-03-19",
+      "role": "Camera Op",
+      "event": "2026 March 1-31 - Manchester Grand Hyatt SD - Complimentary In-House Events1"
+    },
+    {
+      "date": "2026-03-18",
+      "role": "Video Lead",
+      "event": "2026 March 1-31 - Manchester Grand Hyatt SD - Complimentary In-House Events1"
+    },
+    {
+      "date": "2026-03-17",
+      "role": "Audio Lead",
+      "event": "CEATI 2026 HYDRO CONFERENCE"
+    },
+    {
+      "date": "2026-03-16",
+      "role": "Power Dist Asst",
+      "event": "CEATI 2026 Hydro Conference"
+    },
+    {
+      "date": "2026-03-15",
+      "role": "Set/Strike",
+      "event": "CEATI 2026 HYDRO CONFERENCE"
+    },
+    {
+      "date": "2026-03-14",
+      "role": "",
+      "event": "OFF"
+    },
+    {
+      "date": "2026-03-13",
+      "role": "Floor",
+      "event": "COMMUNITY ENGAGEMENT INITIATIVE 2026"
+    },
+    {
+      "date": "2026-03-12",
+      "role": "Audio Technician Op",
+      "event": "CAPITAS FINANCIAL 2026 ANNUAL MEETING"
+    },
+    {
+      "date": "2026-03-11",
+      "role": "Audio Technician Op",
+      "event": "CAPITAS FINANCIAL 2026 ANNUAL MEETING"
+    },
+    {
+      "date": "2026-03-10",
+      "role": "Audio Technician Op",
+      "event": "CAPITAS FINANCIAL 2026 ANNUAL MEETING"
+    },
+    {
+      "date": "2026-03-09",
+      "role": "",
+      "event": "OFF"
+    },
+    {
+      "date": "2026-03-08",
+      "role": "Set/Strike",
+      "event": "ISTAT 2026 NORTH AMERICAN CONFERENCE"
+    },
+    {
+      "date": "2026-03-06",
+      "role": "Liaison",
+      "event": "AUTODESK OTC (SKO) - Seaport Ballroom"
+    },
+    {
+      "date": "2026-03-05",
+      "role": "Set/Strike",
+      "event": "Set/Strike"
+    },
+    {
+      "date": "2026-03-04",
+      "role": "Set/Strike",
+      "event": "AUTODESK OTC (SKO) - Harbor Ballroom & Breakouts"
+    },
+    {
+      "date": "2026-03-03",
+      "role": "Set/Strike",
+      "event": "AUTODESK OTC (SKO) - Harbor Ballroom & Breakouts"
+    },
+    {
+      "date": "2026-03-01",
+      "role": "Floor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-02-27",
+      "role": "Breakout Op",
+      "event": "American Excess Insurance Meeting - 6k Lumen Avalon Projection"
+    },
+    {
+      "date": "2026-02-26",
+      "role": "Breakout Op",
+      "event": "American Excess Insurance Meeting - 6k Lumen Avalon Projection"
+    },
+    {
+      "date": "2026-02-25",
+      "role": "Set/Strike",
+      "event": "Avalon set/zoom test"
+    },
+    {
+      "date": "2026-02-24",
+      "role": "Set/Strike",
+      "event": "2026 PROEXPO"
+    },
+    {
+      "date": "2026-02-23",
+      "role": "Floor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-02-22",
+      "role": "Set/Strike",
+      "event": "Outdoor reception with moon balloon, 2 speaker audio system"
+    },
+    {
+      "date": "2026-02-21",
+      "role": "Set/Strike",
+      "event": "CRIEI 2026"
+    },
+    {
+      "date": "2026-02-20",
+      "role": "Set/Strike",
+      "event": "Breakouts | Boston Scientific Neuromodulation National Sales Meeting Feb2026 MYP 2of2"
+    },
+    {
+      "date": "2026-02-19",
+      "role": "Vid Eng",
+      "event": "2026 February 1-28 - Manchester Grand Hyatt SD - Complimentary In-House Events"
+    },
+    {
+      "date": "2026-02-18",
+      "role": "Set/Strike",
+      "event": "Breakouts | Boston Scientific Neuromodulation National Sales Meeting Feb2026 MYP 2of2"
+    },
+    {
+      "date": "2026-02-17",
+      "role": "Set/Strike",
+      "event": "Breakouts | Boston Scientific Neuromodulation National Sales Meeting Feb2026 MYP 2of2"
+    },
+    {
+      "date": "2026-02-16",
+      "role": "Floor",
+      "event": "AM"
+    },
+    {
+      "date": "2026-02-15",
+      "role": "Set/Strike",
+      "event": ""
+    },
+    {
+      "date": "2026-02-15",
+      "role": "Set/Strike",
+      "event": "Receptions - Cognizant Growth Summit Feb2026"
+    },
+    {
+      "date": "2026-02-13",
+      "role": "Liaison",
+      "event": "Jones Day Partner Meeting 2026 - Services Only"
+    },
+    {
+      "date": "2026-02-10",
+      "role": "Audio Eng FOH A1",
+      "event": "2026 CREF MULTIFAMILY HOUSING CONVENTION & EXPO - Breakouts"
+    },
+    {
+      "date": "2026-02-09",
+      "role": "Audio Eng FOH A1",
+      "event": "2026 CREF MULTIFAMILY HOUSING CONVENTION & EXPO - Breakouts"
+    },
+    {
+      "date": "2026-02-08",
+      "role": "Breakout Op",
+      "event": "2026 CREF MULTIFAMILY HOUSING CONVENTION & EXPO - Breakouts"
+    },
+    {
+      "date": "2026-02-07",
+      "role": "Breakout Op",
+      "event": "2026 CREF MULTIFAMILY HOUSING CONVENTION & EXPO - Breakouts"
+    },
+    {
+      "date": "2026-02-04",
+      "role": "Audio Eng FOH A1",
+      "event": "WORLD Symposium 2026-ICW-Sanofi Skyline"
+    },
+    {
+      "date": "2026-02-03",
+      "role": "Audio Eng FOH A1",
+      "event": "WORLD Symposium 2026-ICW-Sanofi Skyline"
+    },
+    {
+      "date": "2026-01-31",
+      "role": "Rig Support Tech",
+      "event": "WORLD Symposium 2026-ICW-This Is Spiro"
+    },
+    {
+      "date": "2026-01-30",
+      "role": "Supervisor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-01-29",
+      "role": "Floor",
+      "event": ""
+    },
+    {
+      "date": "2026-01-28",
+      "role": "Set/Strike",
+      "event": "Alkermes NSM 2026 - Breakouts (Estimate) - Marina & Bay Tower"
+    },
+    {
+      "date": "2026-01-24",
+      "role": "Breakout Op",
+      "event": ""
+    },
+    {
+      "date": "2026-01-23",
+      "role": "Breakout Op",
+      "event": ""
+    },
+    {
+      "date": "2026-01-22",
+      "role": "Floor",
+      "event": ""
+    },
+    {
+      "date": "2026-01-21",
+      "role": "Floor",
+      "event": ""
+    },
+    {
+      "date": "2026-01-20",
+      "role": "Set/Strike",
+      "event": "Breakouts, Committee Meetings, Receptions - FMI Midwinter Executive Conference & FMI Board Meeting J"
+    },
+    {
+      "date": "2026-01-20",
+      "role": "Floor",
+      "event": ""
+    },
+    {
+      "date": "2026-01-19",
+      "role": "Floor",
+      "event": ""
+    },
+    {
+      "date": "2026-01-17",
+      "role": "",
+      "event": "OFF"
+    },
+    {
+      "date": "2026-01-16",
+      "role": "",
+      "event": "OFF"
+    },
+    {
+      "date": "2026-01-15",
+      "role": "",
+      "event": "OFF"
+    },
+    {
+      "date": "2026-01-14",
+      "role": "Power Dist Asst",
+      "event": "APSARD 2026 - Exhibits"
+    },
+    {
+      "date": "2026-01-13",
+      "role": "Supervisor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-01-12",
+      "role": "Supervisor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-01-11",
+      "role": "Supervisor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-01-10",
+      "role": "Supervisor",
+      "event": "PM"
+    },
+    {
+      "date": "2026-01-09",
+      "role": "Floor",
+      "event": ""
+    },
+    {
+      "date": "2026-01-08",
+      "role": "Floor",
+      "event": ""
+    }
+  ]
+}
