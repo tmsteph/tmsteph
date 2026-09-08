@@ -2,29 +2,151 @@
   "updated": "2026-09-07",
   "source": "Curated from Thomas Stephens' live-event work history",
   "credits": [
-    {"period":"Sep 2026","role":"Audio Engineer — FOH A1","event":"Partnership Meeting 2026"},
-    {"period":"Sep 2026","role":"LED Wall Technician","event":"Allergan Mid Year NSM"},
-    {"period":"Aug 2026","role":"Audio System Engineer — A2","event":"Saluda Medical Global Sales Meeting 2026"},
-    {"period":"Aug 2026","role":"Audio System Engineer — A2","event":"NGLCC Conference 2026","detail":"General session with four 10×18 flown screens"},
-    {"period":"Aug 2026","role":"Lighting Technician","event":"UCI School of Medicine TNT PC-TEAM Fellows Conference"},
-    {"period":"Jul 2026","role":"Audio Engineer — FOH A1","event":"Gila River Office of the Treasurer Planning Session"},
-    {"period":"Jul 2026","role":"Video Technician / Operator","event":"Manchester Grand Hyatt San Diego in-house events"},
-    {"period":"Jul 2026","role":"Scenic Lead","event":"Production lighting / scenic strike support"},
-    {"period":"Jul 2026","role":"Breakout Operator","event":"MPACT All Team Meeting 2026"},
-    {"period":"Jun 2026","role":"Power Distribution Lead","event":"AVID Center Summer Institute"},
-    {"period":"Jun 2026","role":"Audio Lead + FOH A1","event":"American Immigration Lawyers Association"},
-    {"period":"Jun 2026","role":"Audio Engineer — FOH A1","event":"ASML 2026"},
-    {"period":"Jun 2026","role":"Video Engineer","event":"WFA Franchise Forum"},
-    {"period":"May 2026","role":"Camera Operator","event":"ASMS Annual Conference / Bruker eXceed Meeting"},
-    {"period":"May 2026","role":"Audio Technician / Operator","event":"Empyrean User Conference"},
-    {"period":"Apr 2026","role":"Camera Operator","event":"San Diego Working Waterfront"},
-    {"period":"Apr 2026","role":"Audio Technician / Operator","event":"ASU GSV Summit 2026"},
-    {"period":"Mar 2026","role":"Audio System Engineer — A2","event":"TJX Companies / Marmaxx DM Summit"},
-    {"period":"Mar 2026","role":"Audio Lead","event":"CEATI Hydro Conference"},
-    {"period":"Mar 2026","role":"Video Lead + Camera Operator","event":"Manchester Grand Hyatt San Diego in-house events"},
-    {"period":"Feb 2026","role":"Audio Engineer — FOH A1","event":"CREF Multifamily Housing Convention & Expo"},
-    {"period":"Feb 2026","role":"Audio Engineer — FOH A1","event":"WORLD Symposium / Sanofi"},
-    {"period":"Jan 2026","role":"Rig Support Technician","event":"WORLD Symposium / This Is Spiro"},
-    {"period":"Jan 2026","role":"Power Distribution Assistant","event":"APSARD 2026"}
-  ]
+    {
+      "period": "Sep 2026",
+      "role": "Audio Engineer — FOH A1",
+      "event": "Partnership Meeting 2026",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Sep 2026",
+      "role": "LED Wall Technician",
+      "event": "Allergan Mid Year NSM",
+      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+    },
+    {
+      "period": "Aug 2026",
+      "role": "Audio System Engineer — A2",
+      "event": "Saluda Medical Global Sales Meeting 2026",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Aug 2026",
+      "role": "Audio System Engineer — A2",
+      "event": "NGLCC Conference 2026",
+      "detail": "General session with four 10×18 flown screens",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Aug 2026",
+      "role": "Lighting Technician",
+      "event": "UCI School of Medicine TNT PC-TEAM Fellows Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Jul 2026",
+      "role": "Audio Engineer — FOH A1",
+      "event": "Gila River Office of the Treasurer Planning Session",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Jul 2026",
+      "role": "Video Technician / Operator",
+      "event": "Manchester Grand Hyatt San Diego in-house events",
+      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+    },
+    {
+      "period": "Jul 2026",
+      "role": "Scenic Lead",
+      "event": "Production lighting / scenic strike support",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Jul 2026",
+      "role": "Breakout Operator",
+      "event": "MPACT All Team Meeting 2026",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Jun 2026",
+      "role": "Power Distribution Lead",
+      "event": "AVID Center Summer Institute",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Jun 2026",
+      "role": "Audio Lead + FOH A1",
+      "event": "American Immigration Lawyers Association",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Jun 2026",
+      "role": "Audio Engineer — FOH A1",
+      "event": "ASML 2026",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Jun 2026",
+      "role": "Video Engineer",
+      "event": "WFA Franchise Forum",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "May 2026",
+      "role": "Camera Operator",
+      "event": "ASMS Annual Conference / Bruker eXceed Meeting",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "May 2026",
+      "role": "Audio Technician / Operator",
+      "event": "Empyrean User Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Apr 2026",
+      "role": "Camera Operator",
+      "event": "San Diego Working Waterfront",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Apr 2026",
+      "role": "Audio Technician / Operator",
+      "event": "ASU GSV Summit 2026",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Mar 2026",
+      "role": "Audio System Engineer — A2",
+      "event": "TJX Companies / Marmaxx DM Summit",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Mar 2026",
+      "role": "Audio Lead",
+      "event": "CEATI Hydro Conference",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Mar 2026",
+      "role": "Video Lead + Camera Operator",
+      "event": "Manchester Grand Hyatt San Diego in-house events",
+      "location": "Manchester Grand Hyatt San Diego · San Diego, CA"
+    },
+    {
+      "period": "Feb 2026",
+      "role": "Audio Engineer — FOH A1",
+      "event": "CREF Multifamily Housing Convention & Expo",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Feb 2026",
+      "role": "Audio Engineer — FOH A1",
+      "event": "WORLD Symposium / Sanofi",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Jan 2026",
+      "role": "Rig Support Technician",
+      "event": "WORLD Symposium / This Is Spiro",
+      "location": "San Diego, CA"
+    },
+    {
+      "period": "Jan 2026",
+      "role": "Power Distribution Assistant",
+      "event": "APSARD 2026",
+      "location": "San Diego, CA"
+    }
+  ],
+  "location_note": "Venue shown where verified from Lighthouse; city/area shown when the earlier capture did not preserve the exact venue."
 }
