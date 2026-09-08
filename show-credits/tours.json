@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-08",
-  "note": "City-level route history reconstructed from company schedules, contracts, venue sheets and production/audio correspondence. It is intentionally conservative: missing points mean the source record is incomplete, not that the tour skipped everything between them.",
+  "note": "Route history reconstructed from company schedules, contracts, venue sheets and production/audio correspondence. Exact theaters are shown where the archived venue sheet confirms them; otherwise the public record stays at city level.",
   "tours": [
     {
       "id": "jcs",
@@ -25,7 +25,8 @@
           "lat": 33.64,
           "lng": -117.92,
           "period": "Nov 2021",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Segerstrom Center for the Arts"
         },
         {
           "city": "Milwaukee",
@@ -34,7 +35,8 @@
           "lat": 43.04,
           "lng": -87.91,
           "period": "Nov 2021",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Marcus Center for the Performing Arts, Uihlein Hall"
         },
         {
           "city": "Toronto",
@@ -43,7 +45,8 @@
           "lat": 43.65,
           "lng": -79.38,
           "period": "Dec 2021",
-          "evidence": "Work Light weekly schedules"
+          "evidence": "Work Light company city sheet",
+          "venue": "Princess of Wales Theatre"
         },
         {
           "city": "Boston",
@@ -52,7 +55,8 @@
           "lat": 42.36,
           "lng": -71.06,
           "period": "Jan 2022",
-          "evidence": "Work Light weekly schedules"
+          "evidence": "Work Light company city sheet",
+          "venue": "Emerson Colonial Theatre"
         },
         {
           "city": "Indianapolis",
@@ -61,7 +65,8 @@
           "lat": 39.77,
           "lng": -86.16,
           "period": "Jan 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Clowes Memorial Hall - Butler University"
         },
         {
           "city": "Providence",
@@ -70,7 +75,8 @@
           "lat": 41.82,
           "lng": -71.41,
           "period": "Jan 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Providence Performing Arts Center"
         },
         {
           "city": "Cleveland",
@@ -79,7 +85,8 @@
           "lat": 41.5,
           "lng": -81.69,
           "period": "Feb 2022",
-          "evidence": "Work Light weekly schedules"
+          "evidence": "Work Light company city sheet",
+          "venue": "Playhouse Square - Connor Palace"
         },
         {
           "city": "Washington",
@@ -88,7 +95,8 @@
           "lat": 38.91,
           "lng": -77.04,
           "period": "Feb-Mar 2022",
-          "evidence": "Work Light weekly schedules"
+          "evidence": "Work Light company city sheet",
+          "venue": "The Kennedy Center - Opera House"
         },
         {
           "city": "Fort Myers",
@@ -97,7 +105,8 @@
           "lat": 26.64,
           "lng": -81.87,
           "period": "Mar 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Barbara B. Mann Performing Arts Hall"
         },
         {
           "city": "Charlotte",
@@ -106,7 +115,8 @@
           "lat": 35.23,
           "lng": -80.84,
           "period": "Mar 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Belk Theatre at Blumenthal Performing Arts Center"
         },
         {
           "city": "Kansas City",
@@ -115,7 +125,8 @@
           "lat": 39.1,
           "lng": -94.58,
           "period": "Apr 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Kauffman Center for the Performing Arts"
         },
         {
           "city": "Dallas",
@@ -124,7 +135,8 @@
           "lat": 32.78,
           "lng": -96.8,
           "period": "Apr 2022",
-          "evidence": "Work Light weekly schedules"
+          "evidence": "Work Light company city sheet",
+          "venue": "Music Hall at Fair Park"
         },
         {
           "city": "Atlanta",
@@ -133,7 +145,8 @@
           "lat": 33.75,
           "lng": -84.39,
           "period": "Apr 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Fox Theatre"
         },
         {
           "city": "Greenville",
@@ -142,7 +155,8 @@
           "lat": 34.85,
           "lng": -82.4,
           "period": "May 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Peace Center for the Performing Arts"
         },
         {
           "city": "Salt Lake City",
@@ -151,7 +165,8 @@
           "lat": 40.76,
           "lng": -111.89,
           "period": "May 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Eccles Theatre"
         },
         {
           "city": "Reno",
@@ -160,7 +175,8 @@
           "lat": 39.53,
           "lng": -119.81,
           "period": "May 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Pioneer Center"
         },
         {
           "city": "Miami",
@@ -169,7 +185,8 @@
           "lat": 25.76,
           "lng": -80.19,
           "period": "Jun 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Adrienne Arsht Center for Performing Arts"
         },
         {
           "city": "Orlando",
@@ -178,7 +195,8 @@
           "lat": 28.54,
           "lng": -81.38,
           "period": "Jun 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Dr. Phillips Center for the Performing Arts"
         },
         {
           "city": "Durham",
@@ -187,7 +205,8 @@
           "lat": 35.99,
           "lng": -78.9,
           "period": "Jun 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Durham Performing Arts Center"
         },
         {
           "city": "Richmond",
@@ -196,7 +215,8 @@
           "lat": 37.54,
           "lng": -77.44,
           "period": "Jun 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Altria Theater"
         },
         {
           "city": "Memphis",
@@ -205,7 +225,8 @@
           "lat": 35.15,
           "lng": -90.05,
           "period": "Jun-Jul 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Orpheum Theatre"
         },
         {
           "city": "San Antonio",
@@ -214,7 +235,8 @@
           "lat": 29.42,
           "lng": -98.49,
           "period": "Jul 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Majestic Theatre"
         },
         {
           "city": "Fort Worth",
@@ -223,7 +245,8 @@
           "lat": 32.76,
           "lng": -97.33,
           "period": "Jul 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "Bass Performance Hall"
         },
         {
           "city": "Chicago",
@@ -232,7 +255,8 @@
           "lat": 41.88,
           "lng": -87.63,
           "period": "Jul 2022",
-          "evidence": "Work Light weekly schedules"
+          "evidence": "Work Light company city sheet",
+          "venue": "Cadillac Palace Theatre"
         },
         {
           "city": "Dayton",
@@ -241,7 +265,8 @@
           "lat": 39.76,
           "lng": -84.19,
           "period": "Aug 2022",
-          "evidence": "Work Light weekly schedule"
+          "evidence": "Work Light company city sheet",
+          "venue": "The Schuster Center - Mead Theatre"
         }
       ]
     },
@@ -268,7 +293,8 @@
           "lat": 38.04,
           "lng": -84.5,
           "period": "2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "Lexington Opera House"
         },
         {
           "city": "Waterbury",
@@ -277,7 +303,8 @@
           "lat": 41.56,
           "lng": -73.05,
           "period": "2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "Palace Theatre"
         },
         {
           "city": "Wilmington",
@@ -286,7 +313,8 @@
           "lat": 34.23,
           "lng": -77.94,
           "period": "2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "CFCC Humanities & Fine Arts Center"
         },
         {
           "city": "Huntsville",
@@ -295,7 +323,8 @@
           "lat": 34.73,
           "lng": -86.59,
           "period": "2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "Von Braun Center"
         },
         {
           "city": "North Charleston",
@@ -304,7 +333,8 @@
           "lat": 32.85,
           "lng": -79.97,
           "period": "2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "North Charleston Performing Arts Center"
         },
         {
           "city": "Roanoke",
@@ -313,7 +343,8 @@
           "lat": 37.27,
           "lng": -79.94,
           "period": "2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "Berglund Performing Arts Theatre"
         },
         {
           "city": "Vancouver",
@@ -322,7 +353,8 @@
           "lat": 49.28,
           "lng": -123.12,
           "period": "2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "Queen Elizabeth Theatre"
         },
         {
           "city": "Eugene",
@@ -331,7 +363,8 @@
           "lat": 44.05,
           "lng": -123.09,
           "period": "2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "Hult Center - Silva Concert Hall"
         },
         {
           "city": "Boise",
@@ -340,7 +373,8 @@
           "lat": 43.62,
           "lng": -116.2,
           "period": "2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "Morrison Center"
         },
         {
           "city": "Fresno",
@@ -349,7 +383,8 @@
           "lat": 36.74,
           "lng": -119.79,
           "period": "May 2017",
-          "evidence": "Work Light venue-information email"
+          "evidence": "Work Light venue-information sheet",
+          "venue": "William Saroyan Theatre"
         },
         {
           "city": "Easton",
