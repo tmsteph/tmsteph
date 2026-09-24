@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101718" />
+  <meta name="description" content="A constructive, living list of GNOME paper cuts: small usability problems worth polishing without losing GNOME's design philosophy." />
+  <title>GNOME Paper Cuts | tmsteph</title>
+  <link rel="icon" href="../favicon-16x16.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap masthead">
+    <a class="brand" href="../">tmsteph<span>.</span></a>
+    <a class="back" href="../">← home</a>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Open source · desktop UX</p>
+      <h1>GNOME<br><em>Paper Cuts.</em></h1>
+      <p class="lede">I love GNOME's design philosophy. This is a constructive list of the little interactions that still make the desktop feel less finished than the ideas behind it.</p>
+      <p class="note">Not a complaint wall. Each item should be reproducible, specific, respectful, and useful to someone who might actually fix it.</p>
+    </section>
+
+    <section class="principle">
+      <strong>The rule:</strong>
+      <span>Describe the thing you were trying to do, what you expected, what happened, and the smallest improvement that would make the computer disappear again.</span>
+    </section>
+    <section class="cuts" aria-labelledby="cuts-title">
+      <div class="section-head">
+        <p class="eyebrow">Observed in real use</p>
+        <h2 id="cuts-title">Current paper cuts</h2>
+      </div>
+
+      <article class="cut">
+        <div class="cut-number">01</div>
+        <div>
+          <h3>Rearranging monitors should not rearrange my workspaces</h3>
+          <p class="context">Observed on Debian forky/sid with GNOME Shell 50.2, Wayland, two displays.</p>
+          <dl>
+            <div><dt>Trying to do</dt><dd>Change which physical display sits on the left or right.</dd></div>
+            <div><dt>Expected</dt><dd>The monitors move. My virtual desktops and application grouping stay intact.</dd></div>
+            <div><dt>Actual</dt><dd>Applications were reassigned across workspaces when the monitor layout changed.</dd></div>
+            <div><dt>Why it matters</dt><dd>A physical desk adjustment should not reorganize the user's mental workspace.</dd></div>
+          </dl>
+          <p class="status">Status: update installed; needs retest on GNOME 50.5.</p>
+        </div>
+      </article>
+
+      <article class="cut">
+        <div class="cut-number">02</div>
+        <div>
+          <h3>Remember what I plug into the headphone jack</h3>
+          <p class="context">Observed with a Realtek ALC3204 combo jack and PipeWire/WirePlumber.</p>
+          <dl>
+            <div><dt>Trying to do</dt><dd>Plug ordinary headphones into the same laptop jack I use all the time.</dd></div>
+            <div><dt>Expected</dt><dd>Route audio to the headphones, using the last successful choice unless something actually changes.</dd></div>
+            <div><dt>Actual</dt><dd>GNOME asks whether the device is headphones, a headset, or a microphone each time. Dismissing the dialog still leaves audio working.</dd></div>
+            <div><dt>Why it matters</dt><dd>A repeated question that can safely be ignored is interruption without information.</dd></div>
+          </dl>
+          <p class="status">Possible workaround: Auto Select Headset extension. Better fix: remember a per-jack choice and provide an easy override.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="history">
+      <p class="eyebrow">This idea has history</p>
+      <h2>GNOME already had the right concept.</h2>
+      <p>The archived <a href="https://wiki.gnome.org/Projects/GnomeShell/Annoyances">GNOME Shell Annoyances</a> page described annoyances as interactions that may not be direct bugs but are hard or annoying “by design.” That framing is worth reviving.</p>
+      <p>Ubuntu's old “100 Paper Cuts” project attacked the same class of small, cumulative usability problems. The goal here is to keep that spirit alive while linking every item back to the modern upstream process.</p>
+    </section>
+
+    <section class="contribute">
+      <p class="eyebrow">Turn irritation into contribution</p>
+      <h2>How this list should work</h2>
+      <ol>
+        <li>Reproduce the behavior on a current GNOME release.</li>
+        <li>Search GNOME GitLab for an existing open or closed issue.</li>
+        <li>Link the upstream issue here, or prepare one focused report.</li>
+        <li>Record workarounds without pretending they are fixes.</li>
+        <li>When something is fixed, move it to a solved section instead of deleting the history.</li>
+      </ol>
+      <div class="links">
+        <a href="https://handbook.gnome.org/issues/reporting.html">GNOME issue reporting →</a>
+        <a href="https://handbook.gnome.org/issues/management.html">Help review issues →</a>
+        <a href="https://gitlab.gnome.org/GNOME">GNOME GitLab →</a>
+      </div>
+    </section>
+
+    <section class="footer-note">
+      <p><strong>Design principle:</strong> preserve GNOME's calm, focused interface while removing needless decisions, state loss, and repeated interruptions.</p>
+      <p>Started from daily use on tmsteph's Debian workstation · September 2026.</p>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <p>tmsteph · computers that belong to people again.</p>
+  </footer>
+</body>
+</html>
