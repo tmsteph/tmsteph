@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="theme-color" content="#11131a" />
+  <title>Private Vault — tmsteph</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="./vault.css" />
+</head>
+<body class="vault-body">
+  <main class="vault-shell">
+    <header class="vault-header">
+      <a class="vault-brand" href="/">tmsteph<span>.</span></a>
+      <button id="lock-button" class="ghost-button hidden" type="button">Lock</button>
+    </header>
+
+    <section id="gate" class="gate-card" aria-labelledby="gate-title">
+      <p class="eyebrow">Private · local encrypted vault</p>
+      <h1 id="gate-title">Adult Vault</h1>
+      <p class="gate-copy">
+        A private catalog for links and notes about consensually published adult material.
+        Nothing in your vault is uploaded by this page; encrypted data stays in this browser unless you export it.
+      </p>
+
+      <div id="setup-panel" class="gate-panel hidden">
+        <h2>Create your vault</h2>
+        <p>Choose a passphrase. It cannot be recovered if you lose it.</p>
+        <form id="setup-form" class="stack">
+          <label>
+            Passphrase
+            <input id="setup-passphrase" type="password" minlength="8" autocomplete="new-password" required />
+          </label>
+          <label>
+            Confirm passphrase
+            <input id="setup-confirm" type="password" minlength="8" autocomplete="new-password" required />
+          </label>
+          <button class="primary-button" type="submit">Create encrypted vault</button>
+        </form>
+      </div>
+
+      <div id="unlock-panel" class="gate-panel hidden">
+        <h2>Unlock</h2>
+        <form id="unlock-form" class="stack">
+          <label>
+            Passphrase
+            <input id="unlock-passphrase" type="password" autocomplete="current-password" required />
+          </label>
+          <button class="primary-button" type="submit">Unlock vault</button>
+        </form>
+      </div>
+
+      <p id="gate-status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="vault" class="vault-app hidden" aria-label="Adult vault">
+      <section class="vault-hero">
+        <div>
+          <p class="eyebrow">Private collection</p>
+          <h1>Your stash, organized.</h1>
+          <p>Save source links, performer names, aliases, tags, notes, and provenance. Media itself is never embedded here.</p>
+        </div>
+        <div class="hero-actions">
+          <button id="new-entry-button" class="primary-button" type="button">+ Add entry</button>
+          <button id="export-button" class="ghost-button" type="button">Export encrypted backup</button>
+          <label class="ghost-button file-button">
+            Import backup
+            <input id="import-input" type="file" accept="application/json,.json" />
+          </label>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Vault filters">
+        <label class="search-box">
+          <span>Search</span>
+          <input id="search-input" type="search" placeholder="Performer, tag, title…" />
+        </label>
+        <label class="check-row">
+          <input id="favorites-only" type="checkbox" />
+          Favorites only
+        </label>
+      </section>
+
+      <p id="vault-status" class="status" role="status" aria-live="polite"></p>
+      <div id="entry-grid" class="entry-grid"></div>
+      <div id="empty-state" class="empty-state hidden">
+        <p class="empty-icon">🔐</p>
+        <h2>No entries yet</h2>
+        <p>Add the first source you want to remember.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="entry-dialog" class="entry-dialog">
+    <form id="entry-form" method="dialog">
+      <div class="dialog-heading">
+        <div>
+          <p class="eyebrow">Catalog entry</p>
+          <h2 id="dialog-title">Add entry</h2>
+        </div>
+        <button id="dialog-close" class="icon-button" type="button" aria-label="Close">×</button>
+      </div>
+
+      <input id="entry-id" type="hidden" />
+
+      <div class="form-grid">
+        <label>
+          Performer / creator
+          <input id="performer" type="text" maxlength="120" required />
+        </label>
+        <label>
+          Aliases
+          <input id="aliases" type="text" maxlength="240" placeholder="Comma separated" />
+        </label>
+        <label class="span-2">
+          Source URL
+          <input id="source-url" type="url" inputmode="url" placeholder="https://…" required />
+        </label>
+        <label class="span-2">
+          Title / reminder
+          <input id="entry-title" type="text" maxlength="180" placeholder="Optional" />
+        </label>
+        <label class="span-2">
+          Tags
+          <input id="tags" type="text" maxlength="300" placeholder="Comma separated" />
+        </label>
+        <label class="span-2">
+          Consent / provenance note
+          <input id="provenance" type="text" maxlength="300" placeholder="Official page, creator account, studio source…" />
+        </label>
+        <label class="span-2">
+          Notes
+          <textarea id="notes" rows="4" maxlength="1500"></textarea>
+        </label>
+      </div>
+
+      <label class="check-row consent-row">
+        <input id="adult-confirmed" type="checkbox" required />
+        I reasonably believe everyone depicted is 18+ and the source is consensually/lawfully published.
+      </label>
+
+      <label class="check-row">
+        <input id="favorite" type="checkbox" />
+        Favorite
+      </label>
+
+      <p class="fine-print">
+        Do not use this vault for leaked, non-consensual, exploitative, or underage material.
+      </p>
+
+      <div class="dialog-actions">
+        <button id="delete-entry-button" class="danger-button hidden" type="button">Delete</button>
+        <span class="spacer"></span>
+        <button id="cancel-entry-button" class="ghost-button" type="button">Cancel</button>
+        <button class="primary-button" type="submit">Save entry</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="./vault.js"></script>
+</body>
+</html>
