@@ -1,0 +1,167 @@
+.vault-body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(98, 76, 170, .22), transparent 34rem),
+    linear-gradient(180deg, #11131a, #171a23 55%, #0f1117);
+  color: #f5f3ff;
+}
+.vault-shell { width: min(calc(100% - 28px), 1040px); margin: 0 auto; padding-bottom: 6rem; }
+.vault-header {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.vault-brand { font-weight: 900; letter-spacing: -.05em; font-size: 1.25rem; }
+.vault-brand span { color: #c7a9ff; }
+.hidden { display: none !important; }
+
+.gate-card, .vault-hero, .controls, .entry-card, .empty-state {
+  border: 1px solid rgba(255,255,255,.11);
+  background: rgba(255,255,255,.055);
+  box-shadow: 0 24px 80px rgba(0,0,0,.24);
+  backdrop-filter: blur(14px);
+}
+.gate-card {
+  max-width: 680px;
+  margin: 9vh auto 0;
+  padding: clamp(1.4rem, 4vw, 2.4rem);
+  border-radius: 30px;
+}
+.gate-card h1, .vault-hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.8rem, 8vw, 5.8rem);
+  line-height: .9;
+  letter-spacing: -.065em;
+}
+.gate-copy, .vault-hero p, .gate-panel p, .empty-state p { color: #b9b7c7; }
+.gate-panel { margin-top: 1.8rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.1); }
+.gate-panel h2 { margin-bottom: .4rem; }
+
+.stack { display: grid; gap: 1rem; }
+label { display: grid; gap: .45rem; font-weight: 800; font-size: .9rem; }
+input, textarea {
+  width: 100%;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 16px;
+  background: rgba(3,5,10,.5);
+  color: #fff;
+  padding: .85rem 1rem;
+  font: inherit;
+}
+textarea { resize: vertical; min-height: 110px; }
+input:focus, textarea:focus { outline: 3px solid rgba(199,169,255,.26); border-color: #b795f3; }
+input::placeholder, textarea::placeholder { color: #777485; }
+
+.primary-button, .ghost-button, .danger-button, .icon-button {
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: .72rem 1rem;
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+.primary-button { background: #f0e8ff; color: #1b1530; }
+.primary-button:hover { background: white; }
+.ghost-button { color: #f5f3ff; background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); }
+.ghost-button:hover { background: rgba(255,255,255,.11); }
+.danger-button { color: #ffd6dc; background: rgba(184,56,78,.14); border-color: rgba(255,116,140,.25); }
+.icon-button { width: 42px; height: 42px; padding: 0; font-size: 1.6rem; color: #fff; background: rgba(255,255,255,.07); }
+.status { min-height: 1.5em; margin: 1rem 0 0; color: #d4c2ff; }
+
+.vault-app { padding-top: 3vh; }
+.vault-hero {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(240px,.45fr);
+  gap: 2rem;
+  align-items: end;
+  border-radius: 30px;
+  padding: clamp(1.4rem, 4vw, 2.3rem);
+}
+.vault-hero h1 { font-size: clamp(3rem, 8vw, 6.3rem); }
+.hero-actions { display: grid; gap: .7rem; }
+.file-button { position: relative; text-align: center; display: block; }
+.file-button input { position: absolute; inline-size: 1px; block-size: 1px; opacity: 0; pointer-events: none; }
+
+.controls {
+  margin-top: 1rem;
+  border-radius: 22px;
+  padding: 1rem;
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.search-box { flex: 1; }
+.check-row { display: flex; grid-template-columns: none; align-items: center; gap: .65rem; font-weight: 750; }
+.check-row input { width: 1.1rem; height: 1.1rem; accent-color: #c7a9ff; }
+
+.entry-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 1rem;
+}
+.entry-card {
+  border-radius: 24px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;
+}
+.entry-card.favorite { border-color: rgba(215,183,255,.36); }
+.entry-top { display: flex; align-items: start; gap: 1rem; justify-content: space-between; }
+.entry-card h2 { margin: 0 0 .35rem; font-size: 1.5rem; letter-spacing: -.035em; }
+.entry-aliases, .entry-notes, .entry-meta { color: #aaa7b8; }
+.entry-aliases, .entry-meta { font-size: .86rem; }
+.entry-notes { margin-top: .85rem; white-space: pre-wrap; }
+.favorite-mark { font-size: 1.15rem; color: #ddc2ff; }
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .8rem; }
+.tag { padding: .25rem .55rem; border-radius: 999px; background: rgba(255,255,255,.075); color: #d7d3e1; font-size: .74rem; font-weight: 800; }
+.entry-actions { margin-top: auto; padding-top: 1rem; display: flex; gap: .6rem; flex-wrap: wrap; }
+.entry-actions a, .entry-actions button {
+  font: inherit;
+  font-weight: 850;
+  font-size: .82rem;
+  border-radius: 999px;
+  padding: .58rem .78rem;
+}
+.entry-actions a { background: #ece5ff; color: #1b1530; }
+.entry-actions button { border: 1px solid rgba(255,255,255,.13); color: #fff; background: rgba(255,255,255,.06); cursor: pointer; }
+
+.empty-state { margin-top: 1rem; padding: 3rem 1.5rem; border-radius: 24px; text-align: center; }
+.empty-icon { font-size: 2.5rem; margin-bottom: .5rem; }
+
+.entry-dialog {
+  width: min(calc(100% - 24px), 760px);
+  max-height: min(90vh, 900px);
+  overflow: auto;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 28px;
+  background: #171922;
+  color: #f5f3ff;
+  padding: 0;
+  box-shadow: 0 40px 120px rgba(0,0,0,.55);
+}
+.entry-dialog::backdrop { background: rgba(5,6,10,.72); backdrop-filter: blur(5px); }
+.entry-dialog form { padding: clamp(1.2rem, 4vw, 2rem); }
+.dialog-heading { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
+.dialog-heading h2 { margin: 0 0 1rem; font-size: 2rem; letter-spacing: -.04em; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.span-2 { grid-column: span 2; }
+.consent-row { margin-top: 1.2rem; align-items: start; }
+.fine-print { margin: .8rem 0 0; color: #8f8c9d; font-size: .8rem; }
+.dialog-actions { margin-top: 1.4rem; display: flex; gap: .6rem; align-items: center; }
+.spacer { flex: 1; }
+
+@media (max-width: 700px) {
+  .vault-hero { grid-template-columns: 1fr; }
+  .entry-grid { grid-template-columns: 1fr; }
+  .controls { align-items: stretch; flex-direction: column; }
+  .form-grid { grid-template-columns: 1fr; }
+  .span-2 { grid-column: auto; }
+  .dialog-actions { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
