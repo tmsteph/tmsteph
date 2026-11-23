@@ -31,12 +31,11 @@ https://tmsteph-redesign-2025.vercel.app
 ## AV booking
 
 The public portfolio lives at `/av/`. Its **Request a hold** button opens an email
-draft and does not place a hold or book a gig. The unlisted
-`/av/availability/` page shows a Pacific-time month grid and is meant to be
-shared directly with bookers. It is not linked from the portfolio and asks
-search engines not to index it. Anyone with the URL can still view it; it
-is not private or access-controlled. Unmarked days do not indicate
-availability or commitments.
+draft and does not place a hold or book a gig. The portfolio's **See available
+dates** link opens `/av/availability/`, which lists upcoming offered days and
+opens a Pacific-time calendar to the earliest offered month. The date page
+asks search engines not to index it, but is public and not access-controlled.
+Unmarked days do not indicate availability or commitments.
 
 Only add date windows Thomas explicitly approves for sharing. Never commit a
 calendar feed, raw availability, employer or personal events, or reasons dates

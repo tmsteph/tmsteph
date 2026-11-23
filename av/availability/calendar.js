@@ -7,6 +7,20 @@ const monthFormat = new Intl.DateTimeFormat('en-US', {
   timeZone: 'UTC', year: 'numeric', month: 'long',
 });
 
+const offeredDateFormat = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'UTC', weekday: 'short', month: 'long', day: 'numeric', year: 'numeric',
+});
+
+function upcomingOpenings(today, offerings = offeredDays) {
+  return [...offerings].filter((day) => day >= today).sort();
+}
+
+function initialMonth(today, openings) {
+  if (!openings.length) return today.month;
+  const [year, month] = openings[0].split('-').map(Number);
+  return (year - today.year) * 12 + month - 1;
+}
+
 function pacificDate(now) {
   const parts = Object.fromEntries(pacificDateFormat.formatToParts(now).map(({ type, value }) => [type, value]));
   return { year: Number(parts.year), month: Number(parts.month) - 1, key: `${parts.year}-${parts.month}-${parts.day}` };
@@ -26,11 +40,22 @@ function buildMonth(year, month, today, offerings = offeredDays) {
   return { label: monthFormat.format(first), cells };
 }
 
-if (typeof module !== 'undefined' && module.exports) module.exports = { pacificDate, buildMonth };
+if (typeof module !== 'undefined' && module.exports) module.exports = { pacificDate, buildMonth, upcomingOpenings, initialMonth };
 
 if (typeof document !== 'undefined') {
   const today = pacificDate(new Date());
-  let month = today.month;
+  const openings = upcomingOpenings(today.key);
+  let month = initialMonth(today, openings);
+  const openingsList = document.getElementById('openings-list');
+  for (const day of openings) {
+    const item = document.createElement('li');
+    const time = document.createElement('time');
+    time.dateTime = day;
+    time.textContent = offeredDateFormat.format(new Date(`${day}T00:00:00Z`));
+    item.append(time);
+    openingsList.append(item);
+  }
+  document.getElementById('openings').hidden = openings.length === 0;
   const tableBody = document.getElementById('days');
   const label = document.getElementById('month-label');
   const status = document.getElementById('dates-status');
