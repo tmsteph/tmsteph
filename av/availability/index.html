@@ -14,6 +14,17 @@
     .meta{color:#ccf684;font:700 .82rem/1.45 ui-monospace,monospace;letter-spacing:.07em;text-transform:uppercase}
     h1{font-size:clamp(2.5rem,7vw,4.5rem);line-height:.95;letter-spacing:-.065em;margin:.65rem 0 1.3rem}
     p{max-width:48ch}
+    .calendar-controls{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin:1.5rem 0 .6rem}
+    .calendar-controls h2{font-size:clamp(1.15rem,4vw,1.55rem);margin:0;text-align:center}
+    button{min-width:44px;min-height:44px;border:1px solid #7d829b;border-radius:4px;background:#242944;color:#fff;font-size:1.3rem;cursor:pointer}
+    button:focus-visible{outline:3px solid #ff9b55;outline-offset:3px}
+    table{width:100%;table-layout:fixed;border-collapse:collapse;margin:0 0 1rem}
+    th{font-size:.78rem;font-weight:700;padding:.35rem 0}
+    td{height:clamp(36px,8vw,55px);border:1px solid #737991;text-align:center;background:#242944}
+    td:empty{background:transparent}
+    td.offered{background:#ccf684;color:#141729;font-weight:700}
+    .muted{color:#d2d6e7}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
     .btn{display:inline-block;margin:.5rem 0 1rem;border-radius:3px;padding:.72rem 1.1rem;background:#ccf684;color:#141729;font-weight:700;text-decoration:none}
   </style>
 </head>
@@ -22,12 +33,32 @@
     <a href="/av/">Thomas Stephens · Live Production</a>
     <p class="meta">San Diego · Pacific time</p>
     <h1>AV availability</h1>
-    <section aria-labelledby="dates-heading">
-      <h2 id="dates-heading">Upcoming dates</h2>
-      <p>No dates are listed yet. Send your show dates, call times, venue, role, and offered rate to check.</p>
+    <section aria-label="Upcoming dates">
+      <div id="calendar" hidden>
+        <div class="calendar-controls">
+          <button id="previous" type="button" aria-label="Previous month">‹</button>
+          <h2 id="month-label" aria-live="polite"></h2>
+          <button id="next" type="button" aria-label="Next month">›</button>
+        </div>
+        <table aria-labelledby="month-label">
+          <thead><tr>
+            <th scope="col"><abbr title="Sunday">Sun</abbr></th>
+            <th scope="col"><abbr title="Monday">Mon</abbr></th>
+            <th scope="col"><abbr title="Tuesday">Tue</abbr></th>
+            <th scope="col"><abbr title="Wednesday">Wed</abbr></th>
+            <th scope="col"><abbr title="Thursday">Thu</abbr></th>
+            <th scope="col"><abbr title="Friday">Fri</abbr></th>
+            <th scope="col"><abbr title="Saturday">Sat</abbr></th>
+          </tr></thead>
+          <tbody id="days"></tbody>
+        </table>
+      </div>
+      <p id="dates-status" class="muted">No dates are listed yet. Unmarked days don’t indicate availability.</p>
+      <p>Send your show dates, call times, venue, role, and offered rate to check.</p>
     </section>
     <a class="btn" href="mailto:tmsteph1290@gmail.com?subject=AV%20hold%20request&amp;body=Hi%20Thomas%2C%0D%0A%0D%0AAre%20you%20available%20for%20this%20show%3F%0D%0A%0D%0ADates%20and%20call%20times%20%28with%20time%20zone%29%3A%0D%0AVenue%20and%20city%3A%0D%0ARole%3A%0D%0AOffered%20rate%3A%0D%0A%0D%0AThanks%21">Request a hold</a>
     <p>A hold is not confirmed until I reply.</p>
   </main>
+  <script src="./calendar.js" defer></script>
 </body>
 </html>

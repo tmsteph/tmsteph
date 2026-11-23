@@ -32,13 +32,16 @@ https://tmsteph-redesign-2025.vercel.app
 
 The public portfolio lives at `/av/`. Its **Request a hold** button opens an email
 draft and does not place a hold or book a gig. The unlisted
-`/av/availability/` page is meant to be shared directly with bookers. It is
-not linked from the portfolio and asks search engines not to index it.
-Anyone with the URL can still view it; it is not private or access-controlled.
+`/av/availability/` page shows a Pacific-time month grid and is meant to be
+shared directly with bookers. It is not linked from the portfolio and asks
+search engines not to index it. Anyone with the URL can still view it; it
+is not private or access-controlled. Unmarked days do not indicate
+availability or commitments.
 
 Only add date windows Thomas explicitly approves for sharing. Never commit a
 calendar feed, raw availability, employer or personal events, or reasons dates
-are blocked. List windows in Pacific time, remove expired windows, and never
+are blocked. Add approved full-day entries only to `offeredDays` in
+`av/availability/calendar.js`, remove expired entries, and never
 treat a missing calendar event as permission to offer a date. Keep private
 conflict checks and opportunity tracking in the existing
 [Portal AV booking work](https://github.com/tmsteph/3dvr-portal/issues/2867).
