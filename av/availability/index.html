@@ -23,9 +23,15 @@
     td{height:clamp(36px,8vw,55px);border:1px solid #737991;text-align:center;background:#242944}
     td:empty{background:transparent}
     td.offered{background:#ccf684;color:#141729;font-weight:700}
+    td.offered a{display:block;color:inherit;text-decoration:none}
+    td.booked{background:#6e2f3a;color:#ffd9d4}
+    .legend{display:flex;gap:1.2rem;list-style:none;padding:0;margin:.2rem 0 1rem}
+    .swatch{display:inline-block;width:1em;height:1em;border:1px solid #737991;margin-right:.4rem;vertical-align:-.1em}
+    .swatch.offered{background:#ccf684}
+    .swatch.booked{background:#6e2f3a}
     .muted{color:#d2d6e7}
-    #openings h2{font-size:1.15rem;margin:1.3rem 0 .35rem}
-    #openings ul{margin:.35rem 0 0;padding-inline-start:1.3rem}
+    #openings h2,#booked h2{font-size:1.15rem;margin:1.3rem 0 .35rem}
+    #openings ul,#booked ul{margin:.35rem 0 0;padding-inline-start:1.3rem}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
     .btn{display:inline-block;margin:.5rem 0 1rem;border-radius:3px;padding:.72rem 1.1rem;background:#ccf684;color:#141729;font-weight:700;text-decoration:none}
   </style>
@@ -58,9 +64,17 @@
           </tr></thead>
           <tbody id="days"></tbody>
         </table>
+        <ul class="legend" aria-label="Legend">
+          <li><span class="swatch offered"></span>Available</li>
+          <li><span class="swatch booked"></span>Booked</li>
+        </ul>
+      </div>
+      <div id="booked" hidden>
+        <h2>Booked dates</h2>
+        <ul id="booked-list"></ul>
       </div>
       <p id="dates-status" class="muted">No dates are listed yet. Unmarked days don’t indicate availability.</p>
-      <p>Send your show dates, call times, venue, role, and offered rate to check.</p>
+      <p>Tap a green date to email a hold request for that day, or send your show dates, call times, venue, role, and offered rate to check.</p>
     </section>
     <a class="btn" href="mailto:tmsteph1290@gmail.com?subject=AV%20hold%20request&amp;body=Hi%20Thomas%2C%0D%0A%0D%0AAre%20you%20available%20for%20this%20show%3F%0D%0A%0D%0ADates%20and%20call%20times%20%28with%20time%20zone%29%3A%0D%0AVenue%20and%20city%3A%0D%0ARole%3A%0D%0AOffered%20rate%3A%0D%0A%0D%0AThanks%21">Request a hold</a>
     <p>A hold is not confirmed until I reply.</p>

@@ -37,10 +37,14 @@ opens a Pacific-time calendar to the earliest offered month. The date page
 asks search engines not to index it, but is public and not access-controlled.
 Unmarked days do not indicate availability or commitments.
 
-Only add date windows Thomas explicitly approves for sharing. Never commit a
-calendar feed, raw availability, employer or personal events, or reasons dates
-are blocked. Add approved full-day entries only to `offeredDays` in
-`av/availability/calendar.js`, remove expired entries, and never
-treat a missing calendar event as permission to offer a date. Keep private
-conflict checks and opportunity tracking in the existing
+Only add dates Thomas explicitly approves for sharing. His standing rule
+(2026-11-23): any day with no personal or professional appointment is
+available, and the list should reach a month or more out. The same day he
+approved listing his Encore show days as booked with role and venue
+(Manchester Grand Hyatt) in `bookedDays` in `av/availability/calendar.js`.
+Available dates are tappable and draft a hold email for that day. Still never
+commit a calendar feed, personal events, or reasons dates are blocked, and
+keep the private conflict checks (the days held back for personal
+appointments) out of the repo. Remove expired entries from both lists. Keep
+private conflict checks and opportunity tracking in the existing
 [Portal AV booking work](https://github.com/tmsteph/3dvr-portal/issues/2867).
