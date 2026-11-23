@@ -7,15 +7,15 @@ const read = (file) => readFileSync(resolve(__dirname, '..', file), 'utf8');
 const portfolio = read('av/index.html');
 const availability = read('av/availability/index.html');
 const calendar = read('av/availability/calendar.js');
-const { pacificDate, buildMonth } = require('../av/availability/calendar.js');
+const { pacificDate, buildMonth, upcomingOpenings, initialMonth } = require('../av/availability/calendar.js');
 
-test('portfolio availability call to action leads to the public hold request', () => {
-  assert.match(portfolio, /href="#booking">Check availability<\/a>/);
+test('portfolio has a prominent availability link and retains the hold section', () => {
+  assert.match(portfolio, /class="btn" href="\/av\/availability\/">See available dates<\/a>/);
   assert.match(portfolio, /id="booking"/);
-  assert.doesNotMatch(portfolio, /href="[^"]*\/availability\/?"/);
+  assert.match(portfolio, /class="booking-actions"><a href="\/av\/availability\/">See available dates<\/a>/);
 });
 
-test('unlisted availability starts without dates or a calendar connection', () => {
+test('noindex availability lists only approved dates and has no calendar connection', () => {
   assert.match(availability, /name="robots" content="noindex"/);
   assert.match(availability, /No dates are listed yet/);
   assert.match(availability, /San Diego · Pacific time/);
@@ -24,7 +24,7 @@ test('unlisted availability starts without dates or a calendar connection', () =
   assert.match(availability, /aria-label="Next month"/);
   assert.match(availability, /<script src="\.\/calendar\.js" defer><\/script>/);
   assert.doesNotMatch(availability, /<time\b|\b20\d{2}-\d{2}-\d{2}\b|<(?:iframe|form)\b|https?:\/\//);
-  assert.match(calendar, /const offeredDays = new Set\(\);/);
+  assert.match(calendar, /const offeredDays = new Set\(\['2026-11-24', '2026-11-28', '2026-12-05', '2026-12-10', '2026-12-13'\]\);/);
   assert.doesNotMatch(calendar, /\b(?:fetch|XMLHttpRequest|sendBeacon)\b/);
 });
 
@@ -61,7 +61,7 @@ test('only expressly offered days not already past can be marked', () => {
   assert.equal(buildMonth(2028, 1, '2028-02-20').cells.filter((cell) => cell?.offered).length, 0);
 });
 
-test('calendar initializes, navigates, and leaves every day unmarked', () => {
+test('calendar initializes, navigates, and leaves every day unmarked once offerings have passed', () => {
   const { runInNewContext } = require('node:vm');
   function element() {
     return {
@@ -72,21 +72,42 @@ test('calendar initializes, navigates, and leaves every day unmarked', () => {
       get classList() { return { add: (name) => this.classes.push(name) }; },
     };
   }
-  const ids = Object.fromEntries(['calendar', 'days', 'month-label', 'dates-status', 'previous', 'next'].map((id) => [id, element()]));
+  const ids = Object.fromEntries(['calendar', 'days', 'month-label', 'dates-status', 'previous', 'next', 'openings', 'openings-list'].map((id) => [id, element()]));
   const document = { getElementById: (id) => ids[id], createElement: element, createDocumentFragment: element };
-  class FrozenDate extends Date {
-    constructor(...args) { super(...(args.length ? args : ['2026-12-01T07:59:59Z'])); }
+  class LaterDate extends Date {
+    constructor(...args) { super(...(args.length ? args : ['2027-02-15T12:00:00Z'])); }
   }
 
-  runInNewContext(calendar, { document, Date: FrozenDate });
+  runInNewContext(calendar, { document, Date: LaterDate });
   assert.equal(ids.calendar.hidden, false);
-  assert.equal(ids['month-label'].textContent, 'November 2026');
+  assert.equal(ids.openings.hidden, true);
+  assert.equal(ids['openings-list'].children.length, 0);
+  assert.equal(ids['month-label'].textContent, 'February 2027');
   assert.match(ids['dates-status'].textContent, /No dates are listed for this month/);
   assert.ok(ids.days.children.every((row) => row.children.length === 7 && row.children.every((day) => day.classes.length === 0)));
 
   ids.next.listeners.click();
-  assert.equal(ids['month-label'].textContent, 'December 2026');
+  assert.equal(ids['month-label'].textContent, 'March 2027');
   assert.match(ids['dates-status'].textContent, /No dates are listed for this month/);
   ids.previous.listeners.click();
-  assert.equal(ids['month-label'].textContent, 'November 2026');
+  assert.equal(ids['month-label'].textContent, 'February 2027');
+
+  class FrozenDate extends Date {
+    constructor(...args) { super(...(args.length ? args : ['2026-12-01T07:59:59Z'])); }
+  }
+  const sample = calendar.replace(/const offeredDays = new Set\(\[.*\]\);/, "const offeredDays = new Set(['2027-01-02', '2026-11-29', '2026-12-01']);");
+  runInNewContext(sample, { document, Date: FrozenDate });
+  assert.equal(ids['month-label'].textContent, 'December 2026');
+  assert.equal(ids.openings.hidden, false);
+  const posted = ids['openings-list'].children.map((item) => item.children[0].dateTime);
+  assert.deepEqual(posted, ['2026-12-01', '2027-01-02']);
+});
+
+test('earliest current or future offering chooses the opening month across year rollover', () => {
+  const today = { year: 2026, month: 11, key: '2026-12-30' };
+  const openings = upcomingOpenings(today.key, new Set(['2027-01-06', '2026-12-29', '2027-01-02']));
+  assert.deepEqual(openings, ['2027-01-02', '2027-01-06']);
+  assert.equal(buildMonth(today.year, initialMonth(today, openings), today.key).label, 'January 2027');
+  assert.equal(initialMonth(today, []), 11);
+  assert.deepEqual(upcomingOpenings(today.key, new Set(['2026-12-30'])), ['2026-12-30']);
 });

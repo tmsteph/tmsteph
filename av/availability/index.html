@@ -24,6 +24,8 @@
     td:empty{background:transparent}
     td.offered{background:#ccf684;color:#141729;font-weight:700}
     .muted{color:#d2d6e7}
+    #openings h2{font-size:1.15rem;margin:1.3rem 0 .35rem}
+    #openings ul{margin:.35rem 0 0;padding-inline-start:1.3rem}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
     .btn{display:inline-block;margin:.5rem 0 1rem;border-radius:3px;padding:.72rem 1.1rem;background:#ccf684;color:#141729;font-weight:700;text-decoration:none}
   </style>
@@ -34,6 +36,10 @@
     <p class="meta">San Diego · Pacific time</p>
     <h1>AV availability</h1>
     <section aria-label="Upcoming dates">
+      <div id="openings" hidden>
+        <h2>Available dates</h2>
+        <ul id="openings-list"></ul>
+      </div>
       <div id="calendar" hidden>
         <div class="calendar-controls">
           <button id="previous" type="button" aria-label="Previous month">‹</button>
