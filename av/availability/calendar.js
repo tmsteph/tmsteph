@@ -1,5 +1,5 @@
 // Full days explicitly approved for public sharing, YYYY-MM-DD in Pacific time.
-const offeredDays = new Set();
+const offeredDays = new Set(['2026-11-24', '2026-11-28', '2026-12-05', '2026-12-10', '2026-12-13']);
 const pacificDateFormat = new Intl.DateTimeFormat('en-US', {
   timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit',
 });
