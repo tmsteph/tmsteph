@@ -1,7 +1,7 @@
 // Full days explicitly approved for public sharing, YYYY-MM-DD in Pacific time.
 // Rule (Thomas, 2026-11-23): any day with no personal or professional
 // appointment is available; Encore show days are listed as booked.
-const offeredDays = new Set(['2026-11-24', '2026-11-28', '2026-12-05', '2026-12-10', '2026-12-13', '2026-12-16', '2026-12-24', '2026-12-25', '2026-12-26', '2026-12-27']);
+const offeredDays = new Set(['2026-11-24', '2026-11-28', '2026-12-05', '2026-12-10', '2026-12-13', '2026-12-24', '2026-12-25', '2026-12-26', '2026-12-27']);
 // Booked days Thomas approved for public sharing on 2026-11-23: role and venue only.
 const bookedDays = new Map([
   ['2026-11-27', 'Supervisor · Manchester Grand Hyatt'],
