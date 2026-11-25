@@ -24,7 +24,7 @@ test('noindex availability lists only approved dates and has no calendar connect
   assert.match(availability, /aria-label="Next month"/);
   assert.match(availability, /<script src="\.\/calendar\.js" defer><\/script>/);
   assert.doesNotMatch(availability, /<time\b|\b20\d{2}-\d{2}-\d{2}\b|<(?:iframe|form)\b|https?:\/\//);
-  assert.match(calendar, /const offeredDays = new Set\(\['2026-11-24', '2026-11-28', '2026-12-05', '2026-12-10', '2026-12-13', '2026-12-16', '2026-12-24', '2026-12-25', '2026-12-26', '2026-12-27'\]\);/);
+  assert.match(calendar, /const offeredDays = new Set\(\['2026-11-24', '2026-11-28', '2026-12-05', '2026-12-10', '2026-12-13', '2026-12-24', '2026-12-25', '2026-12-26', '2026-12-27'\]\);/);
   assert.match(calendar, /\['2026-11-27', 'Supervisor · Manchester Grand Hyatt'\]/);
   assert.match(calendar, /\['2026-12-06', 'A1 Audio Engineer · Manchester Grand Hyatt'\]/);
   assert.match(availability, /class="swatch offered"/);
